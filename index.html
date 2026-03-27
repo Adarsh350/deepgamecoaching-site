@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deep Game Coaching by Adarsh Shankar — Chess Coaching UAE</title>
-  <meta name="description" content="Private 1-on-1 and small group chess coaching by Adarsh Shankar — UAE-based, for beginners, improvers, and competitors. Online or in person.">
+  <title>Chess Coaching UAE | Deep Game Coaching by Adarsh Shankar</title>
+  <meta name="description" content="Private 1-on-1 and small group chess coaching (max 4 students) by Adarsh Shankar — UAE-based, for beginners, improvers, and competitors. Online or in person.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deepgamecoaching.com/">
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="apple-touch-icon" href="/logo.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deepgamecoaching.com/">
+  <meta property="og:title" content="Chess Coaching UAE | Deep Game Coaching by Adarsh Shankar">
+  <meta property="og:description" content="Private 1-on-1 and small group chess coaching (max 4 students) by Adarsh Shankar — UAE-based, for beginners, improvers, and competitors. Online or in person.">
+  <meta property="og:image" content="https://deepgamecoaching.com/og-image.jpg">
+  <meta property="og:locale" content="en_AE">
+  <meta property="og:site_name" content="Deep Game Coaching">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chess Coaching UAE | Deep Game Coaching by Adarsh Shankar">
+  <meta name="twitter:description" content="Private 1-on-1 chess coaching by Adarsh Shankar — UAE-based. Online or in person. Book a free intro.">
+  <meta name="twitter:image" content="https://deepgamecoaching.com/og-image.jpg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "EducationalOrganization"],
     "name": "Deep Game Coaching by Adarsh Shankar",
     "description": "Private 1-on-1 and small group chess coaching by Adarsh Shankar — UAE-based, for beginners, improvers, and competitors. Online or in person.",
     "url": "https://deepgamecoaching.com",
@@ -36,6 +51,39 @@
       "jobTitle": "Chess Coach"
     },
     "sameAs": []
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need any chess experience to start?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. If you've never touched a chess board, that's exactly where we begin. We start from the very first move." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are classes available outside Abu Dhabi and Dubai?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Online classes are available anywhere. In-person coaching is currently limited to Abu Dhabi and Dubai." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long until I see improvement?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most students notice a real difference within 4–6 sessions. Competitive improvement typically comes within 2–3 months of consistent coaching." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can my child join even if they're very young?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We coach from age 6 upward, adapting pace and approach to the student's age and attention span." }
+      },
+      {
+        "@type": "Question",
+        "name": "What platform do you use for online classes?",
+        "acceptedAnswer": { "@type": "Answer", "text": "WhatsApp video, Zoom, or Google Meet — whatever works best for you." }
+      }
+    ]
   }
   </script>
   <style>
@@ -227,7 +275,7 @@
     .btn-sm {
       padding: 10px 20px;
       font-size: var(--text-sm);
-      min-height: 40px;
+      min-height: 44px;
     }
     .btn-lg {
       padding: 16px 36px;
@@ -1141,6 +1189,8 @@
       .about-inner { grid-template-columns: 1fr; gap: var(--space-12); }
       .about-knight { min-height: 240px; }
       .diff-grid { grid-template-columns: 1fr 1fr; }
+      .audience-grid { grid-template-columns: 1fr 1fr; }
+      .footer-inner { gap: var(--space-8); }
     }
 
     @media (max-width: 768px) {
@@ -1161,14 +1211,23 @@
       .footer-inner { grid-template-columns: 1fr; gap: var(--space-8); }
       .footer-bottom { flex-direction: column; align-items: flex-start; }
       .hero { min-height: 85dvh; }
+      .hero-content { padding-top: var(--space-12); padding-bottom: var(--space-12); }
       .hero-ctas { flex-direction: column; align-items: center; }
+      .hero-ctas .btn { width: 100%; max-width: 320px; }
       .proof-track { justify-content: flex-start; }
+      .proof-bar {
+        -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+        mask-image: linear-gradient(to right, black 80%, transparent 100%);
+      }
       .final-cta { padding: var(--space-16) 0; }
     }
 
     @media (max-width: 480px) {
       .badge-row { gap: var(--space-2); }
       .btn-lg { padding: 14px 24px; font-size: var(--text-base); }
+      .stat-row { grid-template-columns: 1fr; gap: var(--space-3); }
+      .stat-card { display: flex; align-items: center; gap: var(--space-4); text-align: left; padding: var(--space-4); }
+      .stat-card-icon { flex-shrink: 0; margin: 0; }
     }
 
     /* ─── prefers-reduced-motion ─── */
@@ -1206,12 +1265,18 @@
     @media (max-width: 599px)  { .testimonials-grid { grid-template-columns: 1fr; } }
     .testimonial-card {
       background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
       border-radius: 16px;
       padding: var(--space-7);
       box-shadow: var(--shadow-card);
       display: flex;
       flex-direction: column;
       position: relative;
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
     }
     .testimonial-card::before {
       content: '\201C';
@@ -1390,7 +1455,7 @@
         <div class="section-header reveal">
           <p class="section-label">Who It's For</p>
           <h2 class="section-headline" id="audience-headline">Whatever your level, there's a path forward</h2>
-          <p class="section-subhead">Three distinct tracks. One coach — Adarsh Shankar — who has been there at every level.</p>
+          <p class="section-subhead">Three distinct tracks. One coach who has competed — and won — at every level.</p>
         </div>
 
         <div class="audience-grid">
@@ -1400,7 +1465,7 @@
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
             </div>
             <h3>Beginners</h3>
-            <p>Never touched a chess board. We start from zero — the pieces, the rules, the mindset. You'll play your first real game within two sessions.</p>
+            <p>Never touched a chess board. Adarsh starts from zero with you — the pieces, the rules, the mindset. You'll play your first real game within two sessions.</p>
             <p class="audience-card-trigger">This is for you if…</p>
             <ul>
               <li>You've always been curious about chess but never started</li>
@@ -1449,7 +1514,7 @@
       <div class="container">
         <div class="section-header reveal">
           <p class="section-label">The DeepGame Difference</p>
-          <h2 class="section-headline" id="diff-headline">Every student gets a coaching plan that's theirs alone</h2>
+          <h2 class="section-headline" id="diff-headline">Every student gets a coaching plan built by Adarsh — and theirs alone</h2>
         </div>
 
         <div class="diff-grid">
@@ -1497,7 +1562,7 @@
             <div class="step-number" aria-hidden="true">1</div>
             <div class="step-content">
               <h3>Book a free intro call</h3>
-              <p>20 minutes on WhatsApp or Zoom. We learn where you are and where you want to go.</p>
+              <p>20 minutes on WhatsApp or Zoom with Adarsh directly. We learn where you are and where you want to go.</p>
             </div>
           </div>
 
@@ -1525,6 +1590,14 @@
             </div>
           </div>
         </div>
+
+        <div class="reveal" style="text-align:center; margin-top: var(--space-12);">
+          <a href="https://wa.me/971525203533" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Book a Free Intro
+          </a>
+          <p style="margin-top: var(--space-3); font-size: var(--text-sm); color: var(--color-text-muted);">20 minutes. No commitment.</p>
+        </div>
       </div>
     </section>
 
@@ -1545,7 +1618,7 @@
               <div class="pricing-card-icon" aria-hidden="true">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
               </div>
-              <h3>Online Classes (1-on-1)</h3>
+              <h3>Online Sessions (1-on-1)</h3>
             </div>
             <div class="pricing-card-body">
               <p>Live video sessions via your preferred platform. Full access to session notes and game recordings. Available UAE-wide and internationally.</p>
@@ -1562,7 +1635,7 @@
               <div class="pricing-card-icon" aria-hidden="true">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
-              <h3>In-Person Classes (1-on-1)</h3>
+              <h3>In-Person Sessions (1-on-1)</h3>
             </div>
             <div class="pricing-card-body">
               <p>Meet at a café or common area of your choice in Abu Dhabi or Dubai. Home visits available on request.</p>
@@ -1586,7 +1659,7 @@
         <div class="about-inner">
           <!-- Coach photo -->
           <div class="about-photo-wrap reveal">
-            <img src="coach.jpg" alt="Adarsh Shankar — DeepGameCoaching chess coach" class="about-photo">
+            <img src="coach.jpg" alt="Adarsh Shankar — chess coach, Deep Game Coaching" class="about-photo" onerror="this.style.display='none';this.parentElement.classList.add('about-knight')">
           </div>
 
           <div class="about-text">
@@ -1636,7 +1709,71 @@
     </section>
 
     <!-- ─────────────────────────────────
-         SECTION 9 — FAQ
+         SECTION 9 — TESTIMONIALS
+    ───────────────────────────────── -->
+    <section class="section" id="testimonials" aria-labelledby="testimonials-headline" style="background:var(--color-muted-bg);">
+      <div class="container">
+        <p class="section-label reveal">Student Results</p>
+        <h2 id="testimonials-headline" class="reveal">What students say</h2>
+        <p class="section-subhead reveal">Real outcomes from real students — juniors, competitive players, and complete beginners across UAE, India, and the US.</p>
+        <div class="testimonials-grid">
+
+          <article class="testimonial-card reveal">
+            <blockquote>
+              <p class="testimonial-quote">"I have spent over 7 years training with Adarsh and he's been both an excellent coach and an immense support for me. When we started I knew nothing at all about chess and now I'm rated over 1900 on Lichess, one of the organizers at Bangalore Chess Club and actively playing and even winning local tournaments."</p>
+              <footer class="testimonial-footer">
+                <strong class="testimonial-name">Sharanya</strong>
+                <span class="testimonial-role">Lichess 1900+ · Treasurer, Bangalore Chess Club · VIT Student</span>
+              </footer>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card reveal" style="transition-delay:80ms">
+            <blockquote>
+              <p class="testimonial-quote">"I had Adarsh train me while I was competing for the Girls U14 UAE Clusters and U19 UAE Cluster and won both events. He is an excellent chess coach but even a better tournament strategist. He helped me develop my game by making my strengths stronger — very focused individual attention even in a group class."</p>
+              <footer class="testimonial-footer">
+                <strong class="testimonial-name">Anchal</strong>
+                <span class="testimonial-role">Girls U14 & U19 UAE Cluster Champion · ADISG · San Francisco Chess Club</span>
+              </footer>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card reveal" style="transition-delay:160ms">
+            <blockquote>
+              <p class="testimonial-quote">"Adarsh provided chess coaching for my 6-year-old son. He worked with him for a year and after his coaching he has been winning tournaments at school and is very happy and excited to play chess even more than before. He did one-on-one coaching and my son has since improved leaps and bounds."</p>
+              <footer class="testimonial-footer">
+                <strong class="testimonial-name">Dr. Yogesh Shastri</strong>
+                <span class="testimonial-role">Parent · Leading Physician, Abu Dhabi</span>
+              </footer>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card reveal" style="transition-delay:240ms">
+            <blockquote>
+              <p class="testimonial-quote">"Adarsh is an extremely talented chess player but I would say his bigger strength is coaching. He is the most patient coach I have worked with and my rating has improved from 700 to 1500 in 1 year under his coaching."</p>
+              <footer class="testimonial-footer">
+                <strong class="testimonial-name">Amritanshi</strong>
+                <span class="testimonial-role">Rating: 700 → 1500 in 1 year · Cornell University</span>
+              </footer>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card reveal" style="transition-delay:320ms">
+            <blockquote>
+              <p class="testimonial-quote">"I had Adarsh train me for both the U14 Mixed and U19 Mixed UAE Chess Tournaments and under his coaching I was able to bag prizes in all 4 years that I competed. His approach to tactics and developing your own style of play is something I haven't seen anywhere else."</p>
+              <footer class="testimonial-footer">
+                <strong class="testimonial-name">Jonathan</strong>
+                <span class="testimonial-role">U14 & U19 UAE Mixed Cluster Champion · ADISG · UAE Cricketer</span>
+              </footer>
+            </blockquote>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────
+         SECTION 9A — FAQ
     ───────────────────────────────── -->
     <section class="section section-muted" aria-labelledby="faq-headline">
       <div class="container">
@@ -1706,70 +1843,6 @@
               <div class="faq-body-inner">WhatsApp video, Zoom, or Google Meet — whatever works best for you.</div>
             </div>
           </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ─────────────────────────────────
-         SECTION 9A — TESTIMONIALS
-    ───────────────────────────────── -->
-    <section class="section" id="testimonials" aria-labelledby="testimonials-headline" style="background:var(--color-muted-bg);">
-      <div class="container">
-        <p class="section-label reveal">Student Results</p>
-        <h2 id="testimonials-headline" class="reveal">What students say</h2>
-        <p class="section-sub reveal">Real outcomes from real students — juniors, competitive players, and complete beginners across UAE, India, and the US.</p>
-        <div class="testimonials-grid">
-
-          <article class="testimonial-card reveal">
-            <blockquote>
-              <p class="testimonial-quote">"I have spent over 7 years training with Adarsh and he's been both an excellent coach and an immense support for me. When we started I knew nothing at all about chess and now I'm rated over 1900 on Lichess, one of the organizers at Bangalore Chess Club and actively playing and even winning local tournaments."</p>
-              <footer class="testimonial-footer">
-                <strong class="testimonial-name">Sharanya</strong>
-                <span class="testimonial-role">Lichess 1900+ · Treasurer, Bangalore Chess Club · VIT Student</span>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card reveal" style="transition-delay:80ms">
-            <blockquote>
-              <p class="testimonial-quote">"I had Adarsh train me while I was competing for the Girls U14 UAE Clusters and U19 UAE Cluster and won both events. He is an excellent chess coach but even a better tournament strategist. He helped me develop my game by making my strengths stronger — very focused individual attention even in a group class."</p>
-              <footer class="testimonial-footer">
-                <strong class="testimonial-name">Anchal</strong>
-                <span class="testimonial-role">Girls U14 & U19 UAE Cluster Champion · ADISG · San Francisco Chess Club</span>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card reveal" style="transition-delay:160ms">
-            <blockquote>
-              <p class="testimonial-quote">"Adarsh provided chess coaching for my 6-year-old son. He worked with him for a year and after his coaching he has been winning tournaments at school and is very happy and excited to play chess even more than before. He did one-on-one coaching and my son has since improved leaps and bounds."</p>
-              <footer class="testimonial-footer">
-                <strong class="testimonial-name">Dr. Yogesh Shastri</strong>
-                <span class="testimonial-role">Parent · Leading Physician, Abu Dhabi</span>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card reveal" style="transition-delay:240ms">
-            <blockquote>
-              <p class="testimonial-quote">"Adarsh is an extremely talented chess player but I would say his bigger strength is coaching. He is the most patient coach I have worked with and my rating has improved from 700 to 1500 in 1 year under his coaching."</p>
-              <footer class="testimonial-footer">
-                <strong class="testimonial-name">Amritanshi</strong>
-                <span class="testimonial-role">Rating: 700 → 1500 in 1 year · Cornell University</span>
-              </footer>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card reveal" style="transition-delay:320ms">
-            <blockquote>
-              <p class="testimonial-quote">"I had Adarsh train me for both the U14 Mixed and U19 Mixed UAE Chess Tournaments and under his coaching I was able to bag prizes in all 4 years that I competed. His approach to tactics and developing your own style of play is something I haven't seen anywhere else."</p>
-              <footer class="testimonial-footer">
-                <strong class="testimonial-name">Jonathan</strong>
-                <span class="testimonial-role">U14 & U19 UAE Mixed Cluster Champion · ADISG · UAE Cricketer</span>
-              </footer>
-            </blockquote>
-          </article>
 
         </div>
       </div>
