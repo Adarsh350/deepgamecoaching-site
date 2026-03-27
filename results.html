@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Results & Testimonials | Deep Game Coaching by Adarsh Shankar</title>
+  <meta name="description" content="Real results from real students — rating gains, tournament debuts, and honest words from beginners, school players, and competitive adults trained by Adarsh Shankar.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deepgamecoaching.com/results.html">
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <meta property="og:title" content="Student Results | Deep Game Coaching by Adarsh Shankar">
+  <meta property="og:description" content="Real rating gains and testimonials from chess students across India, UAE and beyond — trained by Adarsh Shankar.">
+  <meta property="og:url" content="https://deepgamecoaching.com/results.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://deepgamecoaching.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ===== DESIGN SYSTEM ===== */
+    :root {
+      --bg: #0A0A0A;
+      --bg-alt: #0F0F0F;
+      --bg-card: #141414;
+      --bg-surface: #1A1A1A;
+      --green: #1B4F2E;
+      --green-mid: #2A6B42;
+      --gold: #C9A052;
+      --gold-dim: rgba(201,160,82,0.14);
+      --gold-border: rgba(201,160,82,0.28);
+      --cream: #F0EBE0;
+      --cream-soft: rgba(240,235,224,0.78);
+      --cream-muted: rgba(240,235,224,0.44);
+      --border: rgba(240,235,224,0.07);
+      --border-soft: rgba(240,235,224,0.13);
+      --font-display: 'Cormorant', Georgia, serif;
+      --font-ui: 'Jost', system-ui, sans-serif;
+      --nav-height: 76px;
+      --ease: cubic-bezier(0.16,1,0.3,1);
+      --container-max: 1180px;
+      --pad: 24px;
+      --section: 110px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: var(--font-ui); background: var(--bg); color: var(--cream); line-height: 1.65; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+    ul { list-style: none; }
+    .container { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--pad); }
+
+    /* ===== NAV ===== */
+    .site-nav { position: fixed; top: 0; left: 0; right: 0; height: var(--nav-height); display: flex; align-items: center; z-index: 100; transition: background 300ms var(--ease), backdrop-filter 300ms, border-color 300ms; border-bottom: 1px solid transparent; }
+    .site-nav.scrolled { background: rgba(10,10,10,0.90); backdrop-filter: blur(20px); border-color: var(--border); }
+    .nav-inner { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--pad); width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .nav-mark { color: var(--gold); flex-shrink: 0; font-size: 22px; line-height: 1; }
+    .nav-wordmark { font-family: var(--font-display); font-size: 19px; font-weight: 500; letter-spacing: 0.01em; color: var(--cream); white-space: nowrap; }
+    .nav-wordmark em { font-style: normal; color: var(--gold); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-muted); transition: color 200ms; }
+    .nav-links a:hover, .nav-links a.active { color: var(--cream); }
+    .nav-cta { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold-border); padding: 10px 22px; border-radius: 1px; transition: background 200ms, color 200ms; white-space: nowrap; }
+    .nav-cta:hover { background: var(--gold); color: #0A0A0A; }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; width: 22px; padding: 4px 0; }
+    .nav-hamburger span { display: block; width: 100%; height: 1px; background: var(--cream); transition: all 250ms var(--ease); }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    .nav-mobile { position: fixed; top: var(--nav-height); left: 0; right: 0; background: rgba(10,10,10,0.97); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 20px var(--pad) 28px; display: flex; flex-direction: column; gap: 0; transform: translateY(-8px); opacity: 0; pointer-events: none; transition: transform 280ms var(--ease), opacity 280ms; z-index: 99; }
+    .nav-mobile.open { transform: translateY(0); opacity: 1; pointer-events: all; }
+    .nav-mobile a { font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-soft); padding: 14px 0; border-bottom: 1px solid var(--border); display: block; }
+    .nav-mobile a:last-child { border-bottom: none; padding-bottom: 0; }
+
+    /* ===== UTILITIES ===== */
+    .s-label { display: inline-flex; align-items: center; gap: 12px; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+    .s-label::before { content: ''; width: 28px; height: 1px; background: var(--gold); flex-shrink: 0; }
+    .s-headline { font-family: var(--font-display); font-weight: 400; color: var(--cream); line-height: 1.1; letter-spacing: -0.01em; }
+    .s-sub { font-size: 16px; font-weight: 300; color: var(--cream-muted); line-height: 1.75; max-width: 540px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--font-ui); font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 1px; transition: all 250ms var(--ease); white-space: nowrap; cursor: pointer; border: none; min-height: 48px; padding: 0 32px; }
+    .btn-gold { background: var(--gold); color: #0A0A0A; }
+    .btn-gold:hover { background: #DEB968; transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: var(--cream); border: 1px solid var(--border-soft); }
+    .btn-outline:hover { border-color: var(--cream-soft); transform: translateY(-2px); }
+    .gold-rule { width: 48px; height: 1px; background: var(--gold); margin: 0 auto; opacity: 0.6; }
+
+    /* ===== HERO ===== */
+    .page-hero {
+      position: relative;
+      min-height: 380px;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 72px;
+      padding-top: calc(var(--nav-height) + 72px);
+      overflow: hidden;
+      background: var(--bg);
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,160,82,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,160,82,0.035) 1px, transparent 1px);
+      background-size: 52px 52px;
+      pointer-events: none;
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 50% 110%, rgba(27,79,46,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .page-hero .container { position: relative; z-index: 1; }
+    .hero-content { max-width: 720px; }
+    .hero-content .s-label { margin-bottom: 24px; }
+    .hero-h1 { font-family: var(--font-display); font-size: clamp(44px, 6vw, 68px); font-weight: 400; color: var(--cream); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 24px; }
+    .hero-sub { font-size: 16px; font-weight: 300; color: var(--cream-muted); line-height: 1.75; max-width: 480px; margin-bottom: 36px; }
+    .hero-rule { width: 48px; height: 1px; background: var(--gold); opacity: 0.6; }
+
+    /* ===== STATS BAR ===== */
+    .stats-bar {
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 0;
+    }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+    .stat-item { text-align: center; padding: 0 24px; position: relative; }
+    .stat-item + .stat-item::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: 44px; width: 1px; background: var(--border-soft); }
+    .stat-number { font-family: var(--font-display); font-size: 36px; font-weight: 400; font-style: italic; color: var(--gold); line-height: 1.1; margin-bottom: 8px; }
+    .stat-label { font-size: 11px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream-muted); }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-section { padding: var(--section) 0; background: var(--bg); }
+    .testimonials-header { text-align: center; margin-bottom: 100px; }
+    .testimonials-header .s-label { justify-content: center; }
+    .testimonials-header .s-label::before { display: none; }
+    .t-headline { font-family: var(--font-display); font-size: clamp(38px, 5vw, 52px); font-weight: 400; color: var(--cream); letter-spacing: -0.01em; margin-top: 4px; }
+
+    /* Editorial testimonial blocks */
+    .testimonial-block {
+      position: relative;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      min-height: 280px;
+      margin-bottom: 0;
+      overflow: hidden;
+    }
+    .testimonial-block.reverse { grid-template-columns: 40% 60%; }
+    .testimonial-block.reverse .t-quote-col { order: 2; }
+    .testimonial-block.reverse .t-context-col { order: 1; }
+
+    .t-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-border) 30%, var(--gold-border) 70%, transparent);
+      margin: 0;
+    }
+
+    .t-quote-col {
+      position: relative;
+      padding: 72px 64px 72px 0;
+      border-right: 3px solid var(--gold-border);
+    }
+    .testimonial-block.reverse .t-quote-col {
+      padding: 72px 0 72px 64px;
+      border-right: none;
+      border-left: 3px solid var(--gold-border);
+    }
+
+    .t-numeral {
+      position: absolute;
+      font-family: var(--font-display);
+      font-size: 180px;
+      font-weight: 300;
+      color: var(--cream);
+      opacity: 0.04;
+      line-height: 1;
+      top: 40px;
+      right: 40px;
+      user-select: none;
+      pointer-events: none;
+      letter-spacing: -0.06em;
+    }
+    .testimonial-block.reverse .t-numeral { right: auto; left: 40px; }
+
+    .t-open-quote {
+      position: absolute;
+      font-family: var(--font-display);
+      font-size: 120px;
+      color: var(--gold);
+      line-height: 0.7;
+      top: 56px;
+      left: 0;
+      opacity: 0.55;
+      user-select: none;
+      pointer-events: none;
+    }
+    .testimonial-block.reverse .t-open-quote { left: 64px; }
+
+    .t-quote-text {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(22px, 2.4vw, 30px);
+      font-weight: 300;
+      color: var(--cream-soft);
+      line-height: 1.55;
+      position: relative;
+      z-index: 1;
+      padding-top: 24px;
+    }
+
+    .t-context-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 72px 0 72px 64px;
+    }
+    .testimonial-block.reverse .t-context-col { padding: 72px 64px 72px 0; }
+
+    .t-name {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 500;
+      color: var(--cream);
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+    }
+    .t-role {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--cream-muted);
+      line-height: 1.8;
+    }
+    .t-accent-line {
+      width: 32px;
+      height: 2px;
+      background: var(--gold);
+      margin-top: 24px;
+      opacity: 0.7;
+    }
+
+    /* ===== PROGRESS STORIES ===== */
+    .progress-section { padding: var(--section) 0; background: var(--bg-alt); }
+    .progress-header { margin-bottom: 64px; }
+    .progress-headline { font-family: var(--font-display); font-size: clamp(32px, 4vw, 44px); font-weight: 400; color: var(--cream); letter-spacing: -0.01em; margin-top: 4px; max-width: 700px; }
+    .progress-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); }
+    .progress-card {
+      background: var(--bg-card);
+      padding: 36px 32px 40px;
+      position: relative;
+      border-top: 2px solid var(--gold);
+      transition: background 250ms var(--ease);
+    }
+    .progress-card:hover { background: var(--bg-surface); }
+    .progress-rating {
+      font-family: var(--font-display);
+      font-size: 36px;
+      font-weight: 400;
+      color: var(--gold);
+      letter-spacing: -0.01em;
+      margin-bottom: 4px;
+      line-height: 1.1;
+    }
+    .progress-student {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--cream-muted);
+      margin-bottom: 20px;
+    }
+    .progress-detail {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--cream-soft);
+      line-height: 1.7;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
+
+    /* ===== TRUST SECTION ===== */
+    .trust-section { padding: var(--section) 0; background: var(--bg); }
+    .trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .trust-col-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 36px;
+    }
+    .trust-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .trust-item:first-of-type { border-top: 1px solid var(--border); }
+    .trust-dash {
+      width: 20px;
+      height: 1px;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 12px;
+    }
+    .trust-text {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--cream-soft);
+      line-height: 1.7;
+    }
+
+    /* ===== CTA ===== */
+    .cta-section {
+      position: relative;
+      padding: var(--section) 0;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--green) 0%, #122E1C 60%, #0A1A10 100%);
+    }
+    .cta-section::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(201,160,82,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,160,82,0.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .cta-inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+    .cta-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 400;
+      color: var(--cream);
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+      max-width: 620px;
+      margin: 0 auto 20px;
+    }
+    .cta-sub {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--cream-muted);
+      margin-bottom: 44px;
+    }
+    .cta-buttons { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* ===== FOOTER ===== */
+    .site-footer { background: #050505; border-top: 1px solid var(--gold-border); padding: 60px 0 36px; }
+    .footer-top { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; align-items: start; padding-bottom: 48px; border-bottom: 1px solid var(--border); margin-bottom: 28px; }
+    .footer-brand { font-family: var(--font-display); font-size: 20px; font-weight: 500; color: var(--cream); margin-bottom: 10px; }
+    .footer-brand span { color: var(--gold); }
+    .footer-tagline { font-size: 13px; color: var(--cream-muted); line-height: 1.7; max-width: 300px; margin-bottom: 20px; }
+    .footer-wa { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--cream-soft); transition: color 200ms; }
+    .footer-wa:hover { color: var(--gold); }
+    .footer-nav { display: flex; flex-wrap: wrap; gap: 12px 28px; }
+    .footer-nav a { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-muted); transition: color 200ms; }
+    .footer-nav a:hover { color: var(--cream); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; font-size: 11px; color: var(--cream-muted); flex-wrap: wrap; gap: 8px; }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .testimonial-block,
+      .testimonial-block.reverse { grid-template-columns: 1fr; }
+      .testimonial-block.reverse .t-quote-col { order: 1; }
+      .testimonial-block.reverse .t-context-col { order: 2; }
+      .t-quote-col,
+      .testimonial-block.reverse .t-quote-col {
+        padding: 56px 32px 32px 0;
+        border-right: 3px solid var(--gold-border);
+        border-left: none;
+      }
+      .t-context-col,
+      .testimonial-block.reverse .t-context-col {
+        padding: 32px 0 56px;
+      }
+      .t-numeral { font-size: 130px; }
+      .trust-grid { grid-template-columns: 1fr; gap: 56px; }
+      .progress-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+      .stat-item + .stat-item::before { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      :root { --section: 72px; --pad: 20px; --nav-height: 64px; }
+      .nav-links, .nav-cta { display: none; }
+      .nav-hamburger { display: flex; }
+      .footer-top { grid-template-columns: 1fr; gap: 40px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+
+      .testimonial-block,
+      .testimonial-block.reverse { grid-template-columns: 1fr; }
+      .t-quote-col,
+      .testimonial-block.reverse .t-quote-col {
+        padding: 48px 20px 28px 0;
+        border-right: 2px solid var(--gold-border);
+        border-left: none;
+      }
+      .t-context-col,
+      .testimonial-block.reverse .t-context-col {
+        padding: 28px 0 48px;
+      }
+      .t-open-quote,
+      .testimonial-block.reverse .t-open-quote { left: 0; font-size: 80px; top: 44px; }
+      .t-numeral { font-size: 100px; top: 20px; right: 8px; }
+      .testimonial-block.reverse .t-numeral { right: auto; left: 8px; }
+      .stats-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .stat-item + .stat-item::before { display: none; }
+      .progress-grid { grid-template-columns: 1fr; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+      .testimonials-header { margin-bottom: 64px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, .reveal { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Deep Game Coaching home">
+        <span class="nav-mark" aria-hidden="true">♞</span>
+        <span class="nav-wordmark">Deep Game <em>Coaching</em></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="results.html" class="active" aria-current="page">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Book a Session</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="nav-mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="coaching.html">Coaching</a>
+    <a href="about.html">About</a>
+    <a href="results.html" class="active">Results</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" style="color: var(--gold); margin-top: 8px; border-bottom: none;">Book a Session</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero" aria-label="Page hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="s-label reveal">Student Results</div>
+          <h1 class="hero-h1 reveal">What Students<br>Say</h1>
+          <p class="hero-sub reveal">Words from students at every level — school players, competitive adults, complete beginners.</p>
+          <div class="hero-rule reveal"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-bar" aria-label="Key statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Years — average student tenure</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Countries — students trained across India, UAE &amp; beyond</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-number">All</div>
+            <div class="stat-label">Levels — beginners to FIDE-rated players</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-number">Max 4</div>
+            <div class="stat-label">Students per group session</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section" aria-label="Student testimonials">
+      <div class="container">
+        <div class="testimonials-header reveal">
+          <div class="s-label">Testimonials</div>
+          <h2 class="t-headline">The students speak.</h2>
+        </div>
+
+        <!-- I — Sharanya -->
+        <article class="testimonial-block reveal" aria-label="Testimonial from Sharanya">
+          <div class="t-quote-col">
+            <span class="t-numeral" aria-hidden="true">I</span>
+            <span class="t-open-quote" aria-hidden="true">&ldquo;</span>
+            <blockquote class="t-quote-text">
+              I have spent over 7 years training with Adarsh and he&rsquo;s been both an excellent trainer and a fantastic human. I&rsquo;ve improved from 1400 to 1700+ Lichess and am now competing in regional events.
+            </blockquote>
+          </div>
+          <div class="t-context-col">
+            <p class="t-name">Sharanya</p>
+            <p class="t-role">Treasurer, Bangalore Chess Club<br>VIT Student</p>
+            <div class="t-accent-line"></div>
+          </div>
+        </article>
+
+        <div class="t-divider"></div>
+
+        <!-- II — Anushka -->
+        <article class="testimonial-block reverse reveal" aria-label="Testimonial from Anushka">
+          <div class="t-quote-col">
+            <span class="t-numeral" aria-hidden="true">II</span>
+            <span class="t-open-quote" aria-hidden="true">&ldquo;</span>
+            <blockquote class="t-quote-text">
+              I started from scratch and now I&rsquo;m playing in school tournaments. Adarsh makes it really fun and I always understand why I lose a game.
+            </blockquote>
+          </div>
+          <div class="t-context-col">
+            <p class="t-name">Anushka</p>
+            <p class="t-role">School student, age 11<br>Abu Dhabi, UAE</p>
+            <div class="t-accent-line"></div>
+          </div>
+        </article>
+
+        <div class="t-divider"></div>
+
+        <!-- III — Neil -->
+        <article class="testimonial-block reveal" aria-label="Testimonial from Neil">
+          <div class="t-quote-col">
+            <span class="t-numeral" aria-hidden="true">III</span>
+            <span class="t-open-quote" aria-hidden="true">&ldquo;</span>
+            <blockquote class="t-quote-text">
+              I had maybe 6 months of on-and-off learning before I started with Adarsh. Within a year I went from 900 to 1450 on Chess.com. His structured approach is unlike anything I&rsquo;ve tried before.
+            </blockquote>
+          </div>
+          <div class="t-context-col">
+            <p class="t-name">Neil</p>
+            <p class="t-role">Working professional<br>Dubai, UAE</p>
+            <div class="t-accent-line"></div>
+          </div>
+        </article>
+
+        <div class="t-divider"></div>
+
+        <!-- IV — Arjun -->
+        <article class="testimonial-block reverse reveal" aria-label="Testimonial from Arjun">
+          <div class="t-quote-col">
+            <span class="t-numeral" aria-hidden="true">IV</span>
+            <span class="t-open-quote" aria-hidden="true">&ldquo;</span>
+            <blockquote class="t-quote-text">
+              Training with Adarsh helped me develop a real repertoire for the first time. I stopped playing random openings and started understanding positions. My tournament results improved significantly.
+            </blockquote>
+          </div>
+          <div class="t-context-col">
+            <p class="t-name">Arjun</p>
+            <p class="t-role">College student<br>Competitive circuit</p>
+            <div class="t-accent-line"></div>
+          </div>
+        </article>
+
+        <div class="t-divider"></div>
+
+        <!-- V — Priya -->
+        <article class="testimonial-block reveal" aria-label="Testimonial from Priya">
+          <div class="t-quote-col">
+            <span class="t-numeral" aria-hidden="true">V</span>
+            <span class="t-open-quote" aria-hidden="true">&ldquo;</span>
+            <blockquote class="t-quote-text">
+              My son started lessons at 8 years old with zero experience. Adarsh is incredibly patient and has made chess something my son genuinely looks forward to every week.
+            </blockquote>
+          </div>
+          <div class="t-context-col">
+            <p class="t-name">Priya</p>
+            <p class="t-role">Parent of student<br>Abu Dhabi, UAE</p>
+            <div class="t-accent-line"></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROGRESS STORIES -->
+    <section class="progress-section" aria-label="Rating progress stories">
+      <div class="container">
+        <div class="progress-header reveal">
+          <div class="s-label">Verified Progress</div>
+          <h2 class="progress-headline">Rating gains, tournament debuts, consistent improvement.</h2>
+        </div>
+        <div class="progress-grid">
+          <div class="progress-card reveal">
+            <div class="progress-rating">1400 &rarr; 1700+</div>
+            <div class="progress-student">Sharanya — Lichess</div>
+            <p class="progress-detail">7 years of training, now competing at regional level in India.</p>
+          </div>
+          <div class="progress-card reveal">
+            <div class="progress-rating">900 &rarr; 1450</div>
+            <div class="progress-student">Neil — Chess.com</div>
+            <p class="progress-detail">Under 1 year. From hobbyist to club-level competitor in Dubai.</p>
+          </div>
+          <div class="progress-card reveal">
+            <div class="progress-rating">Zero &rarr; Ready</div>
+            <div class="progress-student">Anushka — Tournament debut</div>
+            <p class="progress-detail">School competitions within months of picking up the pieces for the first time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST SECTION -->
+    <section class="trust-section" aria-label="Why students stay">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="reveal">
+            <p class="trust-col-label">Why Students Stay</p>
+            <div class="trust-item">
+              <div class="trust-dash" aria-hidden="true"></div>
+              <p class="trust-text">Direct access to the coach — no assistants, no deputies.</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-dash" aria-hidden="true"></div>
+              <p class="trust-text">Structured progression, not random game reviews.</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-dash" aria-hidden="true"></div>
+              <p class="trust-text">Honest assessment of weaknesses, not just encouragement.</p>
+            </div>
+          </div>
+          <div class="reveal">
+            <p class="trust-col-label">Who This Is For</p>
+            <div class="trust-item">
+              <div class="trust-dash" aria-hidden="true"></div>
+              <p class="trust-text">Competitive players wanting real, measurable results.</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-dash" aria-hidden="true"></div>
+              <p class="trust-text">Beginners who want a proper foundation, not just rules.</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-dash" aria-hidden="true"></div>
+              <p class="trust-text">Busy adults who need efficiency, not filler sessions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-label="Book a session">
+      <div class="container">
+        <div class="cta-inner">
+          <h2 class="cta-h2 reveal">Train with a coach who&rsquo;s been where you want to go.</h2>
+          <p class="cta-sub reveal">Limited spots. Book your introductory call.</p>
+          <div class="cta-buttons reveal">
+            <a href="contact.html" class="btn btn-gold">Book a Session</a>
+            <a href="coaching.html" class="btn btn-outline">See Programs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <p class="footer-brand">Deep Game <span>Coaching</span></p>
+          <p class="footer-tagline">Serious chess coaching for players who want to understand the game, not just play it.</p>
+          <a href="https://wa.me/971000000000" class="footer-wa" aria-label="Contact on WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coaching.html">Coaching</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Deep Game Coaching by Adarsh Shankar. All rights reserved.</span>
+        <span>Abu Dhabi, UAE</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // NAV SCROLL
+    const nav = document.getElementById('siteNav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // HAMBURGER
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+
+    // Close mobile nav on link click
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // SCROLL REVEAL
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(el => observer.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('visible'));
+    }
+  </script>
+
+</body>
+</html>
