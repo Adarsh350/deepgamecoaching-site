@@ -1,0 +1,29 @@
+<svg viewBox="0 0 160 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Amber base accent -->
+  <path d="M 70,172 L 70,194 L 23,194 Q 12,194 12,183 Q 12,172 23,172 Z" fill="#F5A623"/>
+
+  <!-- Piece base outline (white) -->
+  <rect x="12" y="172" width="136" height="22" rx="11" stroke="white" stroke-width="9" fill="none"/>
+
+  <!-- Knight head and neck (white) -->
+  <path stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"
+    d="M 44,172
+       C 41,155 40,136 42,114
+       C 40,100 28,84 14,70
+       C 6,60 4,48 8,36
+       C 12,24 22,14 28,10
+       L 22,2
+       L 34,14
+       C 44,10 56,10 68,16
+       C 78,22 86,34 88,48
+       C 90,60 88,76 84,92
+       C 80,108 78,128 80,146
+       C 82,158 86,166 90,172"/>
+
+  <!-- Arrow (white) -->
+  <line x1="64" y1="162" x2="64" y2="130" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <polyline points="53,140 64,126 75,140" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Eye (amber) -->
+  <circle cx="72" cy="44" r="6" fill="#F5A623"/>
+</svg>

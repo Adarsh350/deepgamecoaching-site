@@ -1,0 +1,1940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepGameCoaching — Chess Coaching UAE</title>
+  <meta name="description" content="UAE-based chess coaching for beginners, improvers, and competitors. Online or in person. Taught by a multi-time Abu Dhabi cluster and inter-school champion.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "DeepGameCoaching",
+    "description": "UAE-based chess coaching for beginners, improvers, and competitors. Online or in person. Taught by a multi-time Abu Dhabi cluster and inter-school champion.",
+    "url": "https://deepgamecoaching.com",
+    "telephone": "+971525203533",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+971525203533",
+      "contactType": "customer service",
+      "availableLanguage": "English"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Abu Dhabi",
+      "addressCountry": "AE"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Abu Dhabi" },
+      { "@type": "City", "name": "Dubai" }
+    ],
+    "serviceType": "Chess Coaching",
+    "priceRange": "Contact for pricing",
+    "founder": {
+      "@type": "Person",
+      "name": "Adarsh",
+      "jobTitle": "Chess Coach"
+    },
+    "sameAs": []
+  }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Rubik:wght@400;500;600&display=swap');
+
+    /* ─────────────────────────────────────────────
+       DESIGN SYSTEM — Source: Google Stitch MCP
+       Project: DeepGameCoaching (12859614162825501945)
+       Asset: assets/17868484064942192051
+    ───────────────────────────────────────────── */
+    :root {
+      /* Colors */
+      --color-primary:        #1B4F2E;
+      --color-primary-dark:   #143D22;
+      --color-primary-light:  #2E7048;
+      --color-secondary:      #F5A623;
+      --color-secondary-dark: #C97F00;
+      --color-secondary-light:#F7B94A;
+      --color-bg:             #FAFAF7;
+      --color-surface:        #FFFFFF;
+      --color-muted-bg:       #E8F5EE;
+      --color-muted-bg-2:     #F0F7F3;
+      --color-text:           #1A1A1A;
+      --color-text-muted:     #5C6B65;
+      --color-border:         #D8EBE0;
+      --color-border-light:   #EBF5EF;
+      --color-primary-10:     rgba(27, 79, 46, 0.10);
+      --color-primary-06:     rgba(27, 79, 46, 0.06);
+      --color-primary-04:     rgba(27, 79, 46, 0.04);
+      --color-white-80:       rgba(255, 255, 255, 0.80);
+      --color-white-95:       rgba(255, 255, 255, 0.95);
+
+      /* Typography */
+      --font-headline: 'Plus Jakarta Sans', sans-serif;
+      --font-body:     'DM Sans', sans-serif;
+      --font-label:    'Rubik', sans-serif;
+
+      /* Type scale */
+      --text-xs:   0.8125rem;  /* 13px */
+      --text-sm:   0.9375rem;  /* 15px */
+      --text-base: 1rem;       /* 16px */
+      --text-md:   1.125rem;   /* 18px */
+      --text-lg:   1.25rem;    /* 20px */
+      --text-xl:   1.5rem;     /* 24px */
+      --text-2xl:  2rem;       /* 32px */
+      --text-3xl:  2.5rem;     /* 40px */
+      --text-4xl:  3rem;       /* 48px */
+      --text-5xl:  3.75rem;    /* 60px */
+      --text-6xl:  4.5rem;     /* 72px */
+
+      /* Spacing (8px base) */
+      --space-1:   4px;
+      --space-2:   8px;
+      --space-3:   12px;
+      --space-4:   16px;
+      --space-5:   20px;
+      --space-6:   24px;
+      --space-8:   32px;
+      --space-10:  40px;
+      --space-12:  48px;
+      --space-16:  64px;
+      --space-20:  80px;
+      --space-24:  96px;
+      --space-32:  128px;
+
+      /* Border radius */
+      --radius-sm:   8px;
+      --radius-md:   12px;
+      --radius-lg:   16px;
+      --radius-xl:   24px;
+      --radius-2xl:  32px;
+      --radius-full: 9999px;
+
+      /* Shadows (green-tinted depth system) */
+      --shadow-subtle:  0 1px 3px rgba(27,79,46,0.06), 0 2px 8px rgba(27,79,46,0.04);
+      --shadow-card:    0 4px 16px rgba(27,79,46,0.08), 0 1px 4px rgba(27,79,46,0.04);
+      --shadow-elevated:0 8px 32px rgba(27,79,46,0.12), 0 2px 8px rgba(27,79,46,0.06);
+      --shadow-hover:   0 12px 40px rgba(27,79,46,0.18), 0 4px 12px rgba(27,79,46,0.08);
+      --shadow-nav:     0 2px 20px rgba(27,79,46,0.08);
+
+      /* Transitions */
+      --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-fast: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-base: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-slow: 280ms cubic-bezier(0.16, 1, 0.3, 1);
+
+      /* Layout */
+      --container-max: 1160px;
+      --container-pad: var(--space-6);
+      --nav-height:    72px;
+    }
+
+    /* ─── Reset & Base ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+    ul { list-style: none; }
+
+    /* ─── Typography ─── */
+    h1, h2, h3, h4 {
+      font-family: var(--font-headline);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--color-text);
+    }
+
+    /* ─── Container ─── */
+    .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 var(--container-pad);
+    }
+
+    /* ─── Buttons ─── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      font-family: var(--font-label);
+      font-weight: 600;
+      font-size: var(--text-base);
+      border-radius: var(--radius-full);
+      padding: 14px 28px;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+      white-space: nowrap;
+      min-height: 48px;
+    }
+    .btn:focus-visible {
+      outline: 3px solid var(--color-secondary);
+      outline-offset: 3px;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-surface);
+      box-shadow: var(--shadow-card);
+    }
+    .btn-primary:hover {
+      background: var(--color-primary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+    .btn-secondary {
+      background: var(--color-secondary);
+      color: var(--color-text);
+      box-shadow: var(--shadow-card);
+    }
+    .btn-secondary:hover {
+      background: var(--color-secondary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1.5px solid var(--color-primary);
+    }
+    .btn-ghost:hover {
+      background: var(--color-muted-bg);
+      transform: translateY(-2px);
+    }
+    .btn-white {
+      background: var(--color-surface);
+      color: var(--color-primary);
+      box-shadow: var(--shadow-card);
+    }
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+    .btn-sm {
+      padding: 10px 20px;
+      font-size: var(--text-sm);
+      min-height: 40px;
+    }
+    .btn-lg {
+      padding: 16px 36px;
+      font-size: var(--text-md);
+      min-height: 56px;
+    }
+
+    /* ─── Section base ─── */
+    .section {
+      padding: var(--space-24) 0;
+    }
+    .section-sm {
+      padding: var(--space-16) 0;
+    }
+    .section-muted {
+      background: var(--color-muted-bg);
+    }
+    .section-muted-2 {
+      background: var(--color-muted-bg-2);
+    }
+    .section-primary {
+      background: var(--color-primary);
+      color: var(--color-surface);
+    }
+
+    .section-label {
+      font-family: var(--font-label);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-secondary);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-3);
+    }
+    .section-headline {
+      font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+      margin-bottom: var(--space-4);
+    }
+    .section-subhead {
+      font-size: var(--text-md);
+      color: var(--color-text-muted);
+      max-width: 640px;
+      line-height: 1.7;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: var(--space-16);
+    }
+    .section-header .section-subhead {
+      margin: var(--space-4) auto 0;
+    }
+
+    /* ─── Pill / Badge ─── */
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-family: var(--font-label);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      background: var(--color-muted-bg);
+      color: var(--color-primary);
+      border: 1px solid var(--color-border);
+      white-space: nowrap;
+    }
+    .pill-amber {
+      background: rgba(245, 166, 35, 0.12);
+      color: var(--color-secondary-dark);
+      border-color: rgba(245, 166, 35, 0.25);
+    }
+
+    /* ─────────────────────────────────
+       SECTION 1 — NAV
+    ───────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      height: var(--nav-height);
+      transition: background var(--transition-base), box-shadow var(--transition-base);
+    }
+    .nav.scrolled {
+      background: var(--color-white-95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-nav);
+      border-bottom: 1px solid var(--color-border-light);
+    }
+    .nav-inner {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 var(--container-pad);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-8);
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      text-decoration: none;
+    }
+    .logo-mark { display: block; flex-shrink: 0; }
+    .logo-wordmark {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      gap: 3px;
+    }
+    .logo-name {
+      font-family: var(--font-headline);
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--color-text);
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .logo-tag {
+      font-family: var(--font-label);
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--color-primary);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .logo-wordmark--light .logo-name { color: rgba(255,255,255,0.92); }
+    .logo-wordmark--light .logo-tag  { color: var(--color-secondary); }
+    .about-logo-display {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-5);
+      padding: var(--space-8);
+    }
+    .about-logo-display .logo-name {
+      font-size: 26px;
+      color: var(--color-primary);
+    }
+    .about-logo-display .logo-tag {
+      font-size: 11px;
+      color: var(--color-text-muted);
+      letter-spacing: 0.25em;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+    }
+    .nav-links a {
+      font-family: var(--font-label);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-text-muted);
+      padding: 8px 12px;
+      border-radius: var(--radius-md);
+      transition: color var(--transition-fast), background var(--transition-fast);
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+    .nav-links a:hover {
+      color: var(--color-primary);
+      background: var(--color-muted-bg);
+    }
+    .nav-links a:focus-visible {
+      outline: 2px solid var(--color-secondary);
+      outline-offset: 2px;
+    }
+    .nav-links a.active {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+    .nav-cta { flex-shrink: 0; }
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 44px;
+      height: 44px;
+      padding: 10px;
+      border-radius: var(--radius-md);
+      transition: background var(--transition-fast);
+    }
+    .nav-hamburger:hover { background: var(--color-muted-bg); }
+    .nav-hamburger:focus-visible {
+      outline: 2px solid var(--color-secondary);
+      outline-offset: 2px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: var(--color-primary);
+      border-radius: var(--radius-full);
+      transition: transform var(--transition-base), opacity var(--transition-fast);
+      transform-origin: center;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile menu */
+    .nav-mobile {
+      position: fixed;
+      top: var(--nav-height);
+      left: 0;
+      right: 0;
+      background: var(--color-white-95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--color-border-light);
+      box-shadow: var(--shadow-elevated);
+      z-index: 99;
+      padding: var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      transform: translateY(-8px);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: transform var(--transition-base), opacity var(--transition-base), visibility var(--transition-base);
+    }
+    .nav-mobile.open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .nav-mobile a {
+      font-family: var(--font-label);
+      font-size: var(--text-md);
+      font-weight: 500;
+      color: var(--color-text-muted);
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-md);
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      transition: color var(--transition-fast), background var(--transition-fast);
+    }
+    .nav-mobile a:hover {
+      color: var(--color-primary);
+      background: var(--color-muted-bg);
+    }
+    .nav-mobile .btn { width: 100%; justify-content: center; margin-top: var(--space-2); }
+
+    /* ─────────────────────────────────
+       SECTION 2 — HERO
+    ───────────────────────────────── */
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: var(--nav-height);
+      background: var(--color-bg);
+    }
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 840px;
+      padding: var(--space-16) var(--container-pad);
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-family: var(--font-label);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-primary);
+      background: var(--color-muted-bg);
+      border: 1px solid var(--color-border);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      margin-bottom: var(--space-8);
+    }
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-secondary);
+    }
+    .hero h1 {
+      font-size: clamp(2.25rem, 6vw, var(--text-5xl));
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: var(--space-6);
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--color-primary);
+      position: relative;
+    }
+    .hero h1 em::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--color-secondary);
+      border-radius: var(--radius-full);
+    }
+    .hero-sub {
+      font-size: clamp(var(--text-base), 2vw, var(--text-md));
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto var(--space-10);
+    }
+    .hero-ctas {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+    }
+    .hero-scroll-hint {
+      position: absolute;
+      bottom: var(--space-8);
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-2);
+      font-family: var(--font-label);
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      opacity: 0.7;
+    }
+    .hero-scroll-hint svg {
+      animation: scrollBounce 2s ease-in-out infinite;
+    }
+    @keyframes scrollBounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(4px); }
+    }
+
+    /* ─────────────────────────────────
+       SECTION 3 — SOCIAL PROOF BAR
+    ───────────────────────────────── */
+    .proof-bar {
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border-light);
+      border-bottom: 1px solid var(--color-border-light);
+      padding: var(--space-5) 0;
+      overflow: hidden;
+    }
+    .proof-track {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      padding: 0 var(--container-pad);
+      max-width: var(--container-max);
+      margin: 0 auto;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      justify-content: center;
+    }
+    .proof-track::-webkit-scrollbar { display: none; }
+
+    /* ─────────────────────────────────
+       SECTION 4 — WHO IT'S FOR
+    ───────────────────────────────── */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+    }
+    .audience-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-card);
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+    .audience-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .audience-card-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-md);
+      background: var(--color-muted-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-5);
+      color: var(--color-primary);
+    }
+    .audience-card h3 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-3);
+    }
+    .audience-card > p {
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      line-height: 1.65;
+      margin-bottom: var(--space-5);
+    }
+    .audience-card-trigger {
+      font-family: var(--font-label);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--color-secondary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--space-3);
+    }
+    .audience-card ul li {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      padding: var(--space-2) 0;
+      padding-left: var(--space-5);
+      position: relative;
+      line-height: 1.5;
+    }
+    .audience-card ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      opacity: 0.5;
+    }
+
+    /* ─────────────────────────────────
+       SECTION 5 — DEEPGAME DIFFERENCE
+    ───────────────────────────────── */
+    .diff-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+      margin-top: var(--space-8);
+    }
+    .diff-feature {
+      padding: var(--space-8);
+      border-radius: var(--radius-xl);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      box-shadow: var(--shadow-subtle);
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+    .diff-feature:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+    }
+    .diff-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-md);
+      background: var(--color-primary);
+      color: var(--color-surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-5);
+    }
+    .diff-feature h3 {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-3);
+    }
+    .diff-feature p {
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      line-height: 1.65;
+    }
+
+    /* ─────────────────────────────────
+       SECTION 6 — HOW IT WORKS
+    ───────────────────────────────── */
+    .steps-container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .steps-line {
+      position: absolute;
+      left: 28px;
+      top: 56px;
+      bottom: 56px;
+      width: 2px;
+      background: var(--color-border);
+    }
+    .step-item {
+      display: flex;
+      gap: var(--space-6);
+      margin-bottom: var(--space-8);
+      position: relative;
+    }
+    .step-item:last-child { margin-bottom: 0; }
+    .step-number {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: var(--color-surface);
+      font-family: var(--font-headline);
+      font-size: var(--text-xl);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      z-index: 1;
+    }
+    .step-content {
+      padding-top: var(--space-3);
+      padding-bottom: var(--space-8);
+    }
+    .step-item:last-child .step-content { padding-bottom: 0; }
+    .step-content h3 {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-2);
+    }
+    .step-content p {
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      line-height: 1.65;
+      max-width: 540px;
+    }
+
+    /* ─────────────────────────────────
+       SECTION 7 — OFFERINGS / PRICING
+    ───────────────────────────────── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-6);
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .pricing-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+    .pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+    .pricing-card-header {
+      background: var(--color-muted-bg);
+      padding: var(--space-8);
+      border-bottom: 1px solid var(--color-border-light);
+    }
+    .pricing-card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: var(--color-primary);
+      color: var(--color-surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-4);
+    }
+    .pricing-card-header h3 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-2);
+    }
+    .pricing-card-body {
+      padding: var(--space-8);
+    }
+    .pricing-card-body p {
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      line-height: 1.65;
+      margin-bottom: var(--space-6);
+    }
+    .pricing-group-note {
+      text-align: center;
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      margin-top: var(--space-8);
+      font-style: italic;
+    }
+
+    /* ─────────────────────────────────
+       SECTION 8 — ABOUT
+    ───────────────────────────────── */
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-16);
+      align-items: start;
+    }
+    .about-knight {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-muted-bg);
+      border-radius: var(--radius-2xl);
+      min-height: 380px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+    .about-knight svg {
+      width: 180px;
+      height: 180px;
+      color: var(--color-primary);
+      opacity: 0.9;
+    }
+    /* LOGO: replace with <img src="logo.png"> when ready */
+    .about-text h2 {
+      font-size: clamp(var(--text-2xl), 3vw, var(--text-3xl));
+      margin-bottom: var(--space-5);
+    }
+    .about-text p {
+      font-size: var(--text-md);
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      margin-bottom: var(--space-8);
+    }
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+      margin-bottom: var(--space-6);
+    }
+    .stat-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-4);
+      text-align: center;
+      box-shadow: var(--shadow-subtle);
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+    .stat-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-card);
+    }
+    .stat-card-icon {
+      width: 32px;
+      height: 32px;
+      margin: 0 auto var(--space-2);
+      color: var(--color-primary);
+    }
+    .stat-card-label {
+      font-family: var(--font-label);
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      font-weight: 500;
+      margin-bottom: var(--space-1);
+    }
+    .stat-card-value {
+      font-family: var(--font-headline);
+      font-size: var(--text-2xl);
+      font-weight: 800;
+      color: var(--color-primary);
+      line-height: 1;
+      margin-bottom: var(--space-1);
+    }
+    .stat-card-sub {
+      font-size: var(--text-xs);
+      color: var(--color-secondary-dark);
+      font-weight: 500;
+    }
+    .fide-line {
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      font-family: var(--font-label);
+      margin-bottom: var(--space-6);
+      padding: var(--space-3) var(--space-4);
+      background: var(--color-muted-bg);
+      border-radius: var(--radius-md);
+      display: inline-block;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    /* ─────────────────────────────────
+       SECTION 9 — FAQ
+    ───────────────────────────────── */
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+    .faq-item:first-child {
+      border-top: 1px solid var(--color-border);
+    }
+    .faq-trigger {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      padding: var(--space-5) 0;
+      font-family: var(--font-headline);
+      font-size: var(--text-md);
+      font-weight: 700;
+      color: var(--color-text);
+      text-align: left;
+      transition: color var(--transition-fast);
+      min-height: 56px;
+    }
+    .faq-trigger:hover { color: var(--color-primary); }
+    .faq-trigger:focus-visible {
+      outline: 2px solid var(--color-secondary);
+      outline-offset: 2px;
+      border-radius: var(--radius-sm);
+    }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--color-muted-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      transition: background var(--transition-fast), transform var(--transition-base);
+    }
+    .faq-item.open .faq-icon {
+      background: var(--color-primary);
+      color: var(--color-surface);
+      transform: rotate(180deg);
+    }
+    .faq-body {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s var(--ease-out);
+    }
+    .faq-body.open {
+      max-height: 400px;
+    }
+    .faq-body-inner {
+      padding-bottom: var(--space-5);
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    /* ─────────────────────────────────
+       SECTION 10 — FINAL CTA
+    ───────────────────────────────── */
+    .final-cta {
+      background: var(--color-primary);
+      padding: var(--space-24) 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect width='30' height='30' x='0' y='0' fill='white' opacity='0.03'/%3E%3Crect width='30' height='30' x='30' y='30' fill='white' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .final-cta-inner {
+      position: relative;
+      z-index: 1;
+    }
+    .final-cta h2 {
+      color: var(--color-surface);
+      font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+      margin-bottom: var(--space-4);
+    }
+    .final-cta p {
+      color: rgba(255,255,255,0.75);
+      font-size: var(--text-md);
+      max-width: 520px;
+      margin: 0 auto var(--space-10);
+      line-height: 1.65;
+    }
+
+    /* ─────────────────────────────────
+       SECTION 11 — FOOTER
+    ───────────────────────────────── */
+    .footer {
+      background: var(--color-text);
+      color: rgba(255,255,255,0.7);
+      padding: var(--space-16) 0 var(--space-12);
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-12);
+      margin-bottom: var(--space-12);
+    }
+    .footer-brand {
+      font-family: var(--font-headline);
+      font-size: var(--text-lg);
+      font-weight: 800;
+      color: var(--color-surface);
+      margin-bottom: var(--space-4);
+    }
+    .footer-tagline {
+      font-size: var(--text-sm);
+      line-height: 1.65;
+      max-width: 300px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2) var(--space-4);
+      align-items: flex-start;
+    }
+    .footer-links a {
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.6);
+      font-family: var(--font-label);
+      transition: color var(--transition-fast);
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+    .footer-links a:hover { color: var(--color-surface); }
+    .footer-links a:focus-visible {
+      outline: 2px solid var(--color-secondary);
+      outline-offset: 2px;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: var(--space-6);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      font-size: var(--text-xs);
+    }
+    .footer-wa-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      color: rgba(255,255,255,0.7);
+      font-family: var(--font-label);
+      font-size: var(--text-sm);
+      transition: color var(--transition-fast);
+      min-height: 44px;
+    }
+    .footer-wa-link:hover { color: var(--color-surface); }
+    .footer-wa-link:focus-visible {
+      outline: 2px solid var(--color-secondary);
+      outline-offset: 2px;
+    }
+
+    /* ─── Scroll reveal ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── Hero stagger ─── */
+    .hero-content > * {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    .hero-content.loaded > *:nth-child(1) { animation: heroFadeUp 0.7s var(--ease-out) 0.1s forwards; }
+    .hero-content.loaded > *:nth-child(2) { animation: heroFadeUp 0.7s var(--ease-out) 0.2s forwards; }
+    .hero-content.loaded > *:nth-child(3) { animation: heroFadeUp 0.7s var(--ease-out) 0.3s forwards; }
+    .hero-content.loaded > *:nth-child(4) { animation: heroFadeUp 0.7s var(--ease-out) 0.4s forwards; }
+
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 1024px) {
+      .about-inner { grid-template-columns: 1fr; gap: var(--space-12); }
+      .about-knight { min-height: 240px; }
+      .diff-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --container-pad: var(--space-5);
+        --nav-height: 64px;
+      }
+      .section { padding: var(--space-16) 0; }
+      .section-header { margin-bottom: var(--space-10); }
+      .nav-links, .nav-cta { display: none; }
+      .nav-hamburger { display: flex; }
+      .audience-grid { grid-template-columns: 1fr; gap: var(--space-5); }
+      .diff-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .stat-row { grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
+      .steps-line { display: none; }
+      .about-inner { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: var(--space-8); }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .hero { min-height: 85dvh; }
+      .hero-ctas { flex-direction: column; align-items: center; }
+      .proof-track { justify-content: flex-start; }
+      .final-cta { padding: var(--space-16) 0; }
+    }
+
+    @media (max-width: 480px) {
+      .badge-row { gap: var(--space-2); }
+      .btn-lg { padding: 14px 24px; font-size: var(--text-base); }
+    }
+
+    /* ─── prefers-reduced-motion ─── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+      .hero-content > * { opacity: 1; transform: none; }
+      html { scroll-behavior: auto; }
+    }
+
+    /* ── Coach photo ── */
+    .about-photo-wrap { display: flex; align-items: flex-start; justify-content: center; }
+    .about-photo {
+      width: 100%;
+      max-width: 360px;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 16px;
+      box-shadow: var(--shadow-card);
+    }
+
+    /* ── Testimonials ── */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+      margin-top: var(--space-10);
+    }
+    @media (max-width: 1023px) { .testimonials-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 599px)  { .testimonials-grid { grid-template-columns: 1fr; } }
+    .testimonial-card {
+      background: var(--color-surface);
+      border-radius: 16px;
+      padding: var(--space-7);
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: '\201C';
+      font-size: 72px;
+      line-height: 1;
+      color: var(--color-secondary);
+      opacity: 0.35;
+      font-family: Georgia, serif;
+      position: absolute;
+      top: 8px;
+      left: 20px;
+      pointer-events: none;
+    }
+    .testimonial-quote {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--color-text-muted);
+      margin: 0 0 var(--space-5);
+      padding-top: var(--space-8);
+      flex: 1;
+    }
+    .testimonial-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      border-top: 1px solid var(--color-muted-bg);
+      padding-top: var(--space-4);
+    }
+    .testimonial-name {
+      font-family: var(--font-headline);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+    .testimonial-role {
+      font-family: var(--font-label);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─────────────────────────────────
+       SECTION 1 — NAV
+  ───────────────────────────────── -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="DeepGameCoaching home">
+        <img src="logo.svg" alt="" width="38" height="38" class="logo-mark">
+        <span class="logo-wordmark">
+          <span class="logo-name">DeepGame</span>
+          <span class="logo-tag">Coaching</span>
+        </span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#who-its-for">Who It's For</a></li>
+        <li><a href="#pricing">Sessions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="https://wa.me/971525203533" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener">
+        Book a Free Intro
+      </a>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile" id="mobile-menu" role="dialog" aria-label="Navigation menu">
+    <a href="#about" class="nav-mobile-link">About</a>
+    <a href="#how-it-works" class="nav-mobile-link">How It Works</a>
+    <a href="#who-its-for" class="nav-mobile-link">Who It's For</a>
+    <a href="#pricing" class="nav-mobile-link">Sessions</a>
+    <a href="#contact" class="nav-mobile-link">Contact</a>
+    <a href="https://wa.me/971525203533" class="btn btn-primary" target="_blank" rel="noopener">Book a Free Intro</a>
+  </div>
+
+  <main>
+
+    <!-- ─────────────────────────────────
+         SECTION 2 — HERO
+    ───────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-headline">
+      <!-- SVG chess board grid pattern (inline, 4% opacity) -->
+      <svg class="hero-pattern" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="chess-grid" x="0" y="0" width="64" height="64" patternUnits="userSpaceOnUse">
+            <rect width="32" height="32" x="0"  y="0"  fill="#1B4F2E" opacity="0.04"/>
+            <rect width="32" height="32" x="32" y="32" fill="#1B4F2E" opacity="0.04"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#chess-grid)"/>
+        <!-- Soft radial overlay for depth -->
+        <radialGradient id="hero-fade" cx="50%" cy="50%" r="70%" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100%" y2="100%">
+          <stop offset="0%"  stop-color="#FAFAF7" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#FAFAF7" stop-opacity="0.85"/>
+        </radialGradient>
+        <rect width="100%" height="100%" fill="url(#hero-fade)"/>
+      </svg>
+
+      <div class="hero-content" id="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          UAE Chess Coaching
+        </div>
+
+        <h1 id="hero-headline">
+          Chess Coaching That's Built Around <em>Your</em> Game
+        </h1>
+
+        <p class="hero-sub">
+          UAE-based coaching for beginners, improvers, and competitors — online or in person. Taught by a multi-time Abu Dhabi cluster and inter-school champion.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="https://wa.me/971525203533" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Book a Free Intro
+          </a>
+          <a href="#how-it-works" class="btn btn-ghost btn-lg">
+            See How It Works
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ─────────────────────────────────
+         SECTION 3 — SOCIAL PROOF BAR
+    ───────────────────────────────── -->
+    <section class="proof-bar" aria-label="Credentials">
+      <div class="proof-track" role="list">
+        <div class="pill" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Multi-time UAE Cluster Champion
+        </div>
+        <div class="pill" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          Abu Dhabi Inter-School Champion
+        </div>
+        <div class="pill pill-amber" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Lichess Blitz Top 6% Globally
+        </div>
+        <div class="pill" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          FIDE Rated Player
+        </div>
+        <div class="pill" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Students across Dubai &amp; Abu Dhabi
+        </div>
+        <div class="pill pill-amber" role="listitem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Online &amp; In-Person Available
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────
+         SECTION 4 — WHO IT'S FOR
+    ───────────────────────────────── -->
+    <section class="section" id="who-its-for" aria-labelledby="audience-headline">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Who It's For</p>
+          <h2 class="section-headline" id="audience-headline">Whatever your level, there's a path forward</h2>
+          <p class="section-subhead">Three distinct tracks. One coach who's been there at every level.</p>
+        </div>
+
+        <div class="audience-grid">
+          <!-- Card 1 -->
+          <article class="audience-card reveal">
+            <div class="audience-card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+            </div>
+            <h3>Beginners</h3>
+            <p>Never touched a chess board. We start from zero — the pieces, the rules, the mindset. You'll play your first real game within two sessions.</p>
+            <p class="audience-card-trigger">This is for you if…</p>
+            <ul>
+              <li>You've always been curious about chess but never started</li>
+              <li>You want to learn properly, not from YouTube clips</li>
+              <li>Your child needs a patient coach who starts from the very beginning</li>
+            </ul>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="audience-card reveal" style="transition-delay: 80ms">
+            <div class="audience-card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3>Improvers</h3>
+            <p>You know how to play but want to compete. We plug the gaps, build your tactical eye, and get you ready for tournaments.</p>
+            <p class="audience-card-trigger">This is for you if…</p>
+            <ul>
+              <li>You've played casually but feel stuck at the same level</li>
+              <li>You want to enter your first competition but don't know how to prepare</li>
+              <li>You're losing games and can't figure out why</li>
+            </ul>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="audience-card reveal" style="transition-delay: 160ms">
+            <div class="audience-card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Competitors</h3>
+            <p>You're already competing and want to start winning. We analyse your game, sharpen your edge, and give you the strategies used at UAE championship level.</p>
+            <p class="audience-card-trigger">This is for you if…</p>
+            <ul>
+              <li>You've competed but keep finishing mid-table</li>
+              <li>You want tournament-tested strategies, not generic drills</li>
+              <li>You're ready to take chess seriously</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────
+         SECTION 5 — THE DEEPGAME DIFFERENCE
+    ───────────────────────────────── -->
+    <section class="section section-muted" aria-labelledby="diff-headline">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">The DeepGame Difference</p>
+          <h2 class="section-headline" id="diff-headline">Every student gets a coaching plan that's theirs alone</h2>
+        </div>
+
+        <div class="diff-grid">
+          <div class="diff-feature reveal">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+            <h3>Playing Style Identification</h3>
+            <p>Within your first month of coaching, we map exactly how you think and play. Aggressive, positional, tactical — we find your natural style and build on it.</p>
+          </div>
+
+          <div class="diff-feature reveal" style="transition-delay: 80ms">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Strength-First Training</h3>
+            <p>Most coaches teach generic chess. We find what you're already good at and make it lethal, so you improve faster than any generic curriculum can offer.</p>
+          </div>
+
+          <div class="diff-feature reveal" style="transition-delay: 160ms">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3>Performance Tracking</h3>
+            <p>Every session is logged. Every game reviewed. You'll always know exactly where you've grown and what's next.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────
+         SECTION 6 — HOW IT WORKS
+    ───────────────────────────────── -->
+    <section class="section" id="how-it-works" aria-labelledby="steps-headline">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">The Process</p>
+          <h2 class="section-headline" id="steps-headline">From zero to the board in 4 steps</h2>
+        </div>
+
+        <div class="steps-container reveal">
+          <div class="steps-line" aria-hidden="true"></div>
+
+          <div class="step-item">
+            <div class="step-number" aria-hidden="true">1</div>
+            <div class="step-content">
+              <h3>Book a free intro call</h3>
+              <p>20 minutes on WhatsApp or Zoom. We learn where you are and where you want to go.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number" aria-hidden="true">2</div>
+            <div class="step-content">
+              <h3>Get your assessment</h3>
+              <p>First 2–3 sessions are about understanding your game, your learning style, and your goals.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number" aria-hidden="true">3</div>
+            <div class="step-content">
+              <h3>Receive your custom plan</h3>
+              <p>We build a coaching roadmap specific to you. No two plans are the same.</p>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number" aria-hidden="true">4</div>
+            <div class="step-content">
+              <h3>Train and track</h3>
+              <p>Weekly sessions, regular game reviews, and clear milestones so you can see your progress.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────
+         SECTION 7 — OFFERINGS / PRICING
+    ───────────────────────────────── -->
+    <section class="section section-muted-2" id="pricing" aria-labelledby="pricing-headline">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Offerings</p>
+          <h2 class="section-headline" id="pricing-headline">Flexible coaching, wherever you are</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Online -->
+          <article class="pricing-card reveal">
+            <div class="pricing-card-header">
+              <div class="pricing-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <h3>Online Classes (1-on-1)</h3>
+            </div>
+            <div class="pricing-card-body">
+              <p>Live video sessions via your preferred platform. Full access to session notes and game recordings. Available UAE-wide and internationally.</p>
+              <a href="https://wa.me/971525203533" class="btn btn-primary" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Book Online
+              </a>
+            </div>
+          </article>
+
+          <!-- In-Person -->
+          <article class="pricing-card reveal" style="transition-delay: 80ms">
+            <div class="pricing-card-header">
+              <div class="pricing-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h3>In-Person Classes (1-on-1)</h3>
+            </div>
+            <div class="pricing-card-body">
+              <p>Meet at a café or common area of your choice in Abu Dhabi or Dubai. Home visits available on request.</p>
+              <a href="https://wa.me/971525203533" class="btn btn-secondary" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Book In-Person
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <p class="pricing-group-note reveal">Group classes available on request.</p>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────
+         SECTION 8 — ABOUT THE COACH
+    ───────────────────────────────── -->
+    <section class="section" id="about" aria-labelledby="about-headline">
+      <div class="container">
+        <div class="about-inner">
+          <!-- Coach photo -->
+          <div class="about-photo-wrap reveal">
+            <img src="coach.jpg" alt="Adarsh Shankar — DeepGameCoaching chess coach" class="about-photo">
+          </div>
+
+          <div class="about-text">
+            <p class="section-label">About the Coach</p>
+            <h2 id="about-headline">Coached by someone who knows what winning takes</h2>
+            <p>Adarsh is a multi-time UAE Abu Dhabi Cluster Champion and inter-school chess champion with a FIDE rating and a Lichess rating that places him in the top 6% of players globally. He has coached students with zero chess experience and turned them into tournament competitors. He brings the same edge-sharpening strategies he used to win UAE-level competitions directly into every coaching session.</p>
+
+            <!-- Rating stats -->
+            <div class="stat-row reveal">
+              <div class="stat-card">
+                <div class="stat-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="stat-card-label">Lichess Bullet</div>
+                <div class="stat-card-value">2139</div>
+                <div class="stat-card-sub">Top 11% globally</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="stat-card-label">Lichess Blitz</div>
+                <div class="stat-card-value">2101</div>
+                <div class="stat-card-sub">Top 6% globally</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div class="stat-card-label">Lichess Rapid</div>
+                <div class="stat-card-value">2264</div>
+              </div>
+            </div>
+
+            <p class="fide-line">FIDE Rated · Std. 1651 · Rpd. 1642 · Blz. 1640</p>
+
+            <div class="badge-row reveal">
+              <span class="pill">Abu Dhabi Cluster Champion</span>
+              <span class="pill">Inter-School Champion</span>
+              <span class="pill pill-amber">FIDE Rated</span>
+              <span class="pill pill-amber">Lichess Blitz Top 6%</span>
+              <span class="pill">10+ years competitive experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────
+         SECTION 9 — FAQ
+    ───────────────────────────────── -->
+    <section class="section section-muted" aria-labelledby="faq-headline">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">FAQ</p>
+          <h2 class="section-headline" id="faq-headline">Common Questions</h2>
+        </div>
+
+        <div class="faq-list reveal" id="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-trigger" id="faq-q-1" aria-expanded="false" aria-controls="faq-b-1">
+              Do I need any chess experience to start?
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-body" id="faq-b-1" role="region" aria-labelledby="faq-q-1">
+              <div class="faq-body-inner">No. If you've never touched a chess board, that's exactly where we begin. We start from the very first move.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" id="faq-q-2" aria-expanded="false" aria-controls="faq-b-2">
+              Are classes available outside Abu Dhabi and Dubai?
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-body" id="faq-b-2" role="region" aria-labelledby="faq-q-2">
+              <div class="faq-body-inner">Online classes are available anywhere. In-person coaching is currently limited to Abu Dhabi and Dubai.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" id="faq-q-3" aria-expanded="false" aria-controls="faq-b-3">
+              How long until I see improvement?
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-body" id="faq-b-3" role="region" aria-labelledby="faq-q-3">
+              <div class="faq-body-inner">Most students notice a real difference within 4–6 sessions. Competitive improvement typically comes within 2–3 months of consistent coaching.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" id="faq-q-4" aria-expanded="false" aria-controls="faq-b-4">
+              Can my child join even if they're very young?
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-body" id="faq-b-4" role="region" aria-labelledby="faq-q-4">
+              <div class="faq-body-inner">Yes. We coach from age 6 upward, adapting pace and approach to the student's age and attention span.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" id="faq-q-5" aria-expanded="false" aria-controls="faq-b-5">
+              What platform do you use for online classes?
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-body" id="faq-b-5" role="region" aria-labelledby="faq-q-5">
+              <div class="faq-body-inner">WhatsApp video, Zoom, or Google Meet — whatever works best for you.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────
+         SECTION 9A — TESTIMONIALS
+    ───────────────────────────────── -->
+    <section class="section" id="testimonials" aria-labelledby="testimonials-headline" style="background:var(--color-muted-bg);">
+      <div class="container">
+        <p class="section-label reveal">Student Results</p>
+        <h2 id="testimonials-headline" class="reveal">What students say</h2>
+        <p class="section-sub reveal">Real outcomes from real students — juniors, competitive players, and complete beginners across UAE, India, and the US.</p>
+        <div class="testimonials-grid">
+
+          <article class="testimonial-card reveal">
+            <blockquote>
+              <p class="testimonial-quote">"I have spent over 7 years training with Adarsh and he's been both an excellent coach and an immense support for me. When we started I knew nothing at all about chess and now I'm rated over 1900 on Lichess, one of the organizers at Bangalore Chess Club and actively playing and even winning local tournaments."</p>
+              <footer class="testimonial-footer">
+                <strong class="testimonial-name">Sharanya</strong>
+                <span class="testimonial-role">Lichess 1900+ · Treasurer, Bangalore Chess Club · VIT Student</span>
+              </footer>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card reveal" style="transition-delay:80ms">
+            <blockquote>
+              <p class="testimonial-quote">"I had Adarsh train me while I was competing for the Girls U14 UAE Clusters and U19 UAE Cluster and won both events. He is an excellent chess coach but even a better tournament strategist. He helped me develop my game by making my strengths stronger — very focused individual attention even in a group class."</p>
+              <footer class="testimonial-footer">
+                <strong class="testimonial-name">Anchal</strong>
+                <span class="testimonial-role">Girls U14 & U19 UAE Cluster Champion · ADISG · San Francisco Chess Club</span>
+              </footer>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card reveal" style="transition-delay:160ms">
+            <blockquote>
+              <p class="testimonial-quote">"Adarsh provided chess coaching for my 6-year-old son. He worked with him for a year and after his coaching he has been winning tournaments at school and is very happy and excited to play chess even more than before. He did one-on-one coaching and my son has since improved leaps and bounds."</p>
+              <footer class="testimonial-footer">
+                <strong class="testimonial-name">Dr. Yogesh Shastri</strong>
+                <span class="testimonial-role">Parent · Leading Physician, Abu Dhabi</span>
+              </footer>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card reveal" style="transition-delay:240ms">
+            <blockquote>
+              <p class="testimonial-quote">"Adarsh is an extremely talented chess player but I would say his bigger strength is coaching. He is the most patient coach I have worked with and my rating has improved from 700 to 1500 in 1 year under his coaching."</p>
+              <footer class="testimonial-footer">
+                <strong class="testimonial-name">Amritanshi</strong>
+                <span class="testimonial-role">Rating: 700 → 1500 in 1 year · Cornell University</span>
+              </footer>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card reveal" style="transition-delay:320ms">
+            <blockquote>
+              <p class="testimonial-quote">"I had Adarsh train me for both the U14 Mixed and U19 Mixed UAE Chess Tournaments and under his coaching I was able to bag prizes in all 4 years that I competed. His approach to tactics and developing your own style of play is something I haven't seen anywhere else."</p>
+              <footer class="testimonial-footer">
+                <strong class="testimonial-name">Jonathan</strong>
+                <span class="testimonial-role">U14 & U19 UAE Mixed Cluster Champion · ADISG · UAE Cricketer</span>
+              </footer>
+            </blockquote>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────
+         SECTION 10 — FINAL CTA
+    ───────────────────────────────── -->
+    <section class="final-cta" id="contact" aria-labelledby="cta-headline">
+      <div class="container final-cta-inner reveal">
+        <h2 id="cta-headline">Ready to start playing better chess?</h2>
+        <p>Book a free 20-minute intro call. No commitment. No pressure. Just chess.</p>
+        <a href="https://wa.me/971525203533" class="btn btn-white btn-lg" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Book a Free Intro
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─────────────────────────────────
+       SECTION 11 — FOOTER
+  ───────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand" style="display:flex;align-items:center;gap:10px;margin-bottom:var(--space-4);">
+            <img src="logo-white.svg" alt="" width="34" height="34" class="logo-mark">
+            <span class="logo-wordmark logo-wordmark--light">
+              <span class="logo-name">DeepGame</span>
+              <span class="logo-tag">Coaching</span>
+            </span>
+          </div>
+          <p class="footer-tagline">Based in the UAE · Coaching students in Abu Dhabi, Dubai, and online</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links" role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#who-its-for">Who It's For</a></li>
+            <li><a href="#pricing">Sessions</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 DeepGameCoaching</span>
+        <a href="https://wa.me/971525203533" class="footer-wa-link" target="_blank" rel="noopener" aria-label="Contact on WhatsApp: +971 52 520 3533">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          +971 52 520 3533
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ─── Nav scroll effect ───
+    const nav = document.getElementById('nav');
+    const onScroll = () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // ─── Hamburger menu ───
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function openMenu() {
+      hamburger.classList.add('open');
+      mobileMenu.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      hamburger.setAttribute('aria-label', 'Close menu');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open menu');
+      document.body.style.overflow = '';
+    }
+    hamburger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      hamburger.classList.contains('open') ? closeMenu() : openMenu();
+    });
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && e.target !== hamburger) closeMenu();
+    });
+    // Close on link tap
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+
+    // ─── FAQ accordion ───
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const trigger = item.querySelector('.faq-trigger');
+      const body = item.querySelector('.faq-body');
+      trigger.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        // Close all
+        faqItems.forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-body').classList.remove('open');
+          i.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+        });
+        // Open clicked (if was closed)
+        if (!isOpen) {
+          item.classList.add('open');
+          body.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // ─── Active nav link on scroll ───
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    const sectionIds = Array.from(navLinks).map(a => a.getAttribute('href').slice(1));
+    const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+    if ('IntersectionObserver' in window && sections.length) {
+      const navIO = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navLinks.forEach(a => a.classList.remove('active'));
+            const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+            if (active) active.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '-10% 0px -60% 0px' });
+      sections.forEach(s => navIO.observe(s));
+    }
+
+    // ─── Scroll reveal (IntersectionObserver) ───
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(el => io.observe(el));
+    } else {
+      // Fallback: show all
+      revealEls.forEach(el => el.classList.add('visible'));
+    }
+
+    // ─── Hero load animation ───
+    if (document.readyState === 'complete') {
+      document.getElementById('hero-content').classList.add('loaded');
+    } else {
+      window.addEventListener('load', () => {
+        document.getElementById('hero-content').classList.add('loaded');
+      });
+    }
+  </script>
+</body>
+</html>
