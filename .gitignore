@@ -1,0 +1,17 @@
+# Vercel
+.vercel/
+
+# Dev scripts
+check-deploy.mjs
+
+# Env files
+.env*
+
+# Claude / AI
+CLAUDE.md
+AUDIT_REPORT*.md
+FIXES_APPLIED*.md
+
+# OS
+.DS_Store
+Thumbs.db
