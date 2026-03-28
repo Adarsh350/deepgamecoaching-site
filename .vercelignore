@@ -1,0 +1,5 @@
+.vercel
+*.md
+check-deploy.mjs
+AUDIT_REPORT*
+FIXES_APPLIED*
