@@ -322,12 +322,14 @@
       position: relative;
       padding: var(--section) 0;
       overflow: hidden;
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
     }
     .cta-section::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, var(--green) 0%, #122E1C 60%, #0A1A10 100%);
+      background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(201,160,82,0.06) 0%, transparent 70%);
     }
     .cta-section::after {
       content: '';
