@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import PageTransition from '@/components/PageTransition';
 
 export const metadata: Metadata = {
   title: 'Chess Coaching UAE | Deep Game Coaching by Adarsh Shankar',
@@ -26,7 +27,9 @@ export default function RootLayout({
     <html lang="en">
       <body style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <Nav />
-        <main style={{ flex: 1 }}>{children}</main>
+        <main style={{ flex: 1 }}>
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
       </body>
     </html>
