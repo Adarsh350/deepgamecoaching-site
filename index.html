@@ -157,50 +157,6 @@
       user-select: none;
     }
 
-    /* ===== FLOATING CHESS PIECES ===== */
-    @keyframes float-a {
-      0%   { transform: translateY(0px) rotate(0deg); }
-      33%  { transform: translateY(-18px) rotate(3deg); }
-      66%  { transform: translateY(-8px) rotate(-2deg); }
-      100% { transform: translateY(0px) rotate(0deg); }
-    }
-    @keyframes float-b {
-      0%   { transform: translateY(0px) rotate(0deg); }
-      40%  { transform: translateY(14px) rotate(-4deg); }
-      70%  { transform: translateY(5px) rotate(2deg); }
-      100% { transform: translateY(0px) rotate(0deg); }
-    }
-    @keyframes float-c {
-      0%   { transform: translateY(0px) rotate(0deg); }
-      50%  { transform: translateY(-22px) rotate(5deg); }
-      100% { transform: translateY(0px) rotate(0deg); }
-    }
-    @keyframes drift-in {
-      from { opacity: 0; transform: translateY(30px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    .chess-float {
-      position: absolute;
-      pointer-events: none;
-      user-select: none;
-      font-family: var(--font-display);
-      color: var(--gold);
-      line-height: 1;
-      animation: drift-in 1.2s var(--ease) forwards;
-      opacity: 0;
-    }
-    .chess-float.f-a { animation: drift-in 1.2s var(--ease) forwards, float-a 9s ease-in-out infinite; }
-    .chess-float.f-b { animation: drift-in 1.4s var(--ease) forwards, float-b 11s ease-in-out infinite; }
-    .chess-float.f-c { animation: drift-in 1.6s var(--ease) forwards, float-c 13s ease-in-out infinite; }
-    /* Piece positions */
-    .cp-1 { font-size: 72px; top: 12%; right: 18%; opacity: 0.055; animation-delay: 0s, 0.2s; }
-    .cp-2 { font-size: 48px; top: 62%; right: 8%;  opacity: 0.04;  animation-delay: 0.3s, 1s; }
-    .cp-3 { font-size: 38px; top: 28%; right: 36%; opacity: 0.03;  animation-delay: 0.6s, 2.5s; }
-    .cp-4 { font-size: 56px; top: 75%; right: 28%; opacity: 0.035; animation-delay: 0.9s, 1.8s; }
-    .cp-5 { font-size: 30px; top: 18%; right: 52%; opacity: 0.025; animation-delay: 1.2s, 3s; }
-    @media (max-width: 768px) {
-      .chess-float { display: none; }
-    }
     .hero-inner {
       position: relative;
       z-index: 2;
@@ -570,12 +526,6 @@
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="hero-grid" aria-hidden="true"></div>
   <div class="hero-knight" aria-hidden="true">♞</div>
-  <!-- Floating chess pieces -->
-  <span class="chess-float f-a cp-1" aria-hidden="true">♜</span>
-  <span class="chess-float f-b cp-2" aria-hidden="true">♝</span>
-  <span class="chess-float f-c cp-3" aria-hidden="true">♟</span>
-  <span class="chess-float f-a cp-4" aria-hidden="true">♛</span>
-  <span class="chess-float f-b cp-5" aria-hidden="true">♞</span>
   <div class="hero-inner">
     <p class="hero-label">Private Chess Coaching · UAE</p>
     <h1>Private chess coaching<br>by a UAE champion.</h1>
