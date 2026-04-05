@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, useMotionValue, useSpring, useTransform, useReducedMotion } from 'framer-motion';
 import AnimatedSection from '@/components/AnimatedSection';
 
 const WA_URL = 'https://wa.me/971525203533';
@@ -12,7 +12,42 @@ const WhatsAppIcon = ({ size = 18 }: { size?: number }) => (
   </svg>
 );
 
+// Magnetic hover element — content is attracted toward cursor
+function MagneticWrap({ children, strength = 0.25 }: { children: React.ReactNode; strength?: number }) {
+  const shouldReduceMotion = useReducedMotion();
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+  const x = useSpring(mouseX, { stiffness: 200, damping: 20 });
+  const y = useSpring(mouseY, { stiffness: 200, damping: 20 });
+
+  if (shouldReduceMotion) return <>{children}</>;
+
+  return (
+    <motion.div
+      style={{ x, y, display: 'inline-block' }}
+      onMouseMove={e => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2;
+        const cy = rect.top + rect.height / 2;
+        mouseX.set((e.clientX - cx) * strength);
+        mouseY.set((e.clientY - cy) * strength);
+      }}
+      onMouseLeave={() => { mouseX.set(0); mouseY.set(0); }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+const steps = [
+  { n: '1', title: 'Message Adarsh on WhatsApp', desc: "Reach out directly via WhatsApp to say you're interested. Adarsh will respond personally and help you schedule a free 20-minute intro call at a time that works for you." },
+  { n: '2', title: 'Talk about your goals', desc: "On the intro call, Adarsh will learn about your current level, what you want to achieve, and how you learn best. There's no pitch — just an honest conversation about whether coaching makes sense for you." },
+  { n: '3', title: 'Start coaching', desc: "If it's a good fit, you'll schedule your first session and get started. Sessions are structured from day one — no wasted time." },
+];
+
 export default function BookPage() {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <>
       {/* PAGE HERO */}
@@ -33,16 +68,42 @@ export default function BookPage() {
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(240,235,224,0.016) 59px, rgba(240,235,224,0.016) 60px), repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(240,235,224,0.016) 59px, rgba(240,235,224,0.016) 60px)', pointerEvents: 'none' }} />
         <div aria-hidden="true" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '600px', height: '300px', background: 'radial-gradient(ellipse at center, rgba(201,160,82,0.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '640px', padding: '0 var(--pad)' }}>
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}>
-            <p style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '11px', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '20px' }}>
-              <span style={{ width: '20px', height: '1px', background: 'var(--gold)', display: 'block' }} />
+          <motion.div
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <motion.p
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.05 }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '11px', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '20px' }}
+            >
+              <motion.span
+                initial={shouldReduceMotion ? false : { scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ duration: 0.5, delay: 0.02, ease: [0.16, 1, 0.3, 1] }}
+                style={{ width: '20px', height: '1px', background: 'var(--gold)', display: 'block', transformOrigin: 'left' }}
+              />
               Get In Touch
-              <span style={{ width: '20px', height: '1px', background: 'var(--gold)', display: 'block' }} />
-            </p>
+              <motion.span
+                initial={shouldReduceMotion ? false : { scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ duration: 0.5, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
+                style={{ width: '20px', height: '1px', background: 'var(--gold)', display: 'block', transformOrigin: 'right' }}
+              />
+            </motion.p>
             <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: 400, color: 'var(--cream)', lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '16px' }}>
               Let&rsquo;s start with a conversation.
             </h1>
-            <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cream-muted)', lineHeight: 1.7 }}>20 minutes. No commitment. Just chess.</p>
+            <motion.p
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.35 }}
+              style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cream-muted)', lineHeight: 1.7 }}
+            >
+              20 minutes. No commitment. Just chess.
+            </motion.p>
           </motion.div>
         </div>
       </section>
@@ -53,37 +114,72 @@ export default function BookPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', maxWidth: '960px', margin: '0 auto' }}>
 
             {/* LEFT: HOW TO BOOK */}
-            <AnimatedSection>
+            <AnimatedSection variant="fadeLeft">
               <p className="s-label">Book Your Session</p>
               <h2 id="contact-main-heading" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 3.5vw, 42px)', fontWeight: 400, color: 'var(--cream)', lineHeight: 1.15, letterSpacing: '-0.01em', marginBottom: '36px' }}>
                 Three easy steps
               </h2>
+
+              {/* Sequential spring step reveals */}
               <ol style={{ display: 'flex', flexDirection: 'column', gap: 0, marginBottom: '40px' }} aria-label="How to book a session">
-                {[
-                  { n: '1', title: 'Message Adarsh on WhatsApp', desc: "Reach out directly via WhatsApp to say you're interested. Adarsh will respond personally and help you schedule a free 20-minute intro call at a time that works for you." },
-                  { n: '2', title: 'Talk about your goals', desc: "On the intro call, Adarsh will learn about your current level, what you want to achieve, and how you learn best. There's no pitch — just an honest conversation about whether coaching makes sense for you." },
-                  { n: '3', title: 'Start coaching', desc: "If it's a good fit, you'll schedule your first session and get started. Sessions are structured from day one — no wasted time." },
-                ].map((step, i) => (
-                  <li key={i} style={{ display: 'flex', gap: '20px', padding: '24px 0', borderBottom: i < 2 ? '1px solid var(--border)' : 'none', paddingTop: i === 0 ? 0 : undefined }}>
-                    <span style={{ fontFamily: 'var(--font-display)', fontSize: '36px', fontWeight: 300, color: 'var(--gold)', opacity: 0.5, lineHeight: 1, flexShrink: 0, width: '40px', marginTop: '2px' }}>{step.n}</span>
+                {steps.map((step, i) => (
+                  <motion.li
+                    key={i}
+                    initial={shouldReduceMotion ? false : { opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ type: 'spring', stiffness: 280, damping: 24, delay: i * 0.15 }}
+                    style={{
+                      display: 'flex', gap: '20px',
+                      padding: '24px 0',
+                      borderBottom: i < 2 ? '1px solid var(--border)' : 'none',
+                      paddingTop: i === 0 ? 0 : undefined,
+                    }}
+                  >
+                    <motion.span
+                      initial={shouldReduceMotion ? false : { scale: 0, opacity: 0 }}
+                      whileInView={{ scale: 1, opacity: 0.5 }}
+                      viewport={{ once: true }}
+                      transition={{ type: 'spring', stiffness: 400, damping: 16, delay: i * 0.15 + 0.1 }}
+                      style={{
+                        fontFamily: 'var(--font-display)', fontSize: '36px', fontWeight: 300,
+                        color: 'var(--gold)', lineHeight: 1, flexShrink: 0, width: '40px', marginTop: '2px',
+                        display: 'inline-block',
+                      }}
+                    >
+                      {step.n}
+                    </motion.span>
                     <div>
                       <p style={{ fontSize: '15px', fontWeight: 500, color: 'var(--cream)', marginBottom: '6px', letterSpacing: '0.01em' }}>{step.title}</p>
                       <p style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cream-muted)', lineHeight: 1.75 }}>{step.desc}</p>
                     </div>
-                  </li>
+                  </motion.li>
                 ))}
               </ol>
+
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'flex-start' }}>
-                <a href={WA_URL} className="btn btn-gold" target="_blank" rel="noopener noreferrer" style={{ minHeight: '54px', padding: '0 36px', fontSize: '13px' }}>
+                <motion.a
+                  href={WA_URL}
+                  className="btn btn-gold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ minHeight: '54px', padding: '0 36px', fontSize: '13px' }}
+                  animate={shouldReduceMotion ? {} : {
+                    boxShadow: ['0 0 0px rgba(201,160,82,0)', '0 0 28px rgba(201,160,82,0.45)', '0 0 0px rgba(201,160,82,0)'],
+                  }}
+                  transition={{ boxShadow: { repeat: Infinity, duration: 2.8, ease: 'easeInOut', delay: 0.8 } }}
+                  whileHover={{ scale: 1.04 }}
+                  whileTap={{ scale: 0.97 }}
+                >
                   <WhatsAppIcon size={18} />
                   Message Adarsh Now
-                </a>
+                </motion.a>
                 <p style={{ fontSize: '12px', color: 'var(--cream-muted)', fontWeight: 300, letterSpacing: '0.03em' }}>Adarsh typically responds within a few hours.</p>
               </div>
             </AnimatedSection>
 
             {/* RIGHT: SESSION DETAILS */}
-            <AnimatedSection delay={0.12}>
+            <AnimatedSection delay={0.12} variant="fadeRight">
               <p className="s-label">Session Details</p>
               <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 3.5vw, 42px)', fontWeight: 400, color: 'var(--cream)', lineHeight: 1.15, letterSpacing: '-0.01em', marginBottom: '36px' }}>
                 What Adarsh offers
@@ -96,10 +192,17 @@ export default function BookPage() {
                   { key: 'Response Time', val: <>Adarsh typically replies <strong style={{ fontWeight: 500, color: 'var(--cream)' }}>within a few hours</strong> on WhatsApp. For urgent enquiries, message directly at +971 52 520 3533.</> },
                   { key: 'Levels', val: <>Complete beginners through to tournament competitors. See the <Link href="/programs" style={{ color: 'var(--gold)', borderBottom: '1px solid var(--gold-border)' }}>Coaching page</Link> for detailed program info.</> },
                 ].map((row, i) => (
-                  <div key={i} style={{ display: 'grid', gridTemplateColumns: '130px 1fr', gap: '20px', padding: '20px 0', borderBottom: i < 4 ? '1px solid var(--border)' : 'none', paddingTop: i === 0 ? 0 : undefined, alignItems: 'start' }}>
+                  <motion.div
+                    key={i}
+                    initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+                    style={{ display: 'grid', gridTemplateColumns: '130px 1fr', gap: '20px', padding: '20px 0', borderBottom: i < 4 ? '1px solid var(--border)' : 'none', paddingTop: i === 0 ? 0 : undefined, alignItems: 'start' }}
+                  >
                     <dt style={{ fontSize: '10px', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gold)', paddingTop: '3px', flexShrink: 0 }}>{row.key}</dt>
                     <dd style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cream-soft)', lineHeight: 1.7 }}>{row.val}</dd>
-                  </div>
+                  </motion.div>
                 ))}
               </dl>
             </AnimatedSection>
@@ -116,19 +219,31 @@ export default function BookPage() {
               { title: 'Always Adarsh, always personal', desc: 'You will never be handed off to a junior coach. Every session is run personally by Adarsh.' },
               { title: 'Flexible scheduling', desc: 'Sessions are scheduled around your availability. Online students across all time zones are welcome.' },
             ].map((item, i) => (
-              <AnimatedSection key={i} delay={i * 0.1}>
-                <div style={{ background: 'var(--bg-card)', padding: '28px 24px', display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
-                  <div style={{ width: '36px', height: '36px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--gold-dim)', border: '1px solid var(--gold-border)', borderRadius: '2px', color: 'var(--gold)', marginTop: '2px' }}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p style={{ fontSize: '13px', fontWeight: 500, color: 'var(--cream)', marginBottom: '5px', letterSpacing: '0.01em' }}>{item.title}</p>
-                    <p style={{ fontSize: '12px', fontWeight: 300, color: 'var(--cream-muted)', lineHeight: 1.7 }}>{item.desc}</p>
-                  </div>
+              <motion.div
+                key={i}
+                initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                whileHover={shouldReduceMotion ? {} : { y: -3 }}
+                style={{ background: 'var(--bg-card)', padding: '28px 24px', display: 'flex', alignItems: 'flex-start', gap: '14px' }}
+              >
+                <motion.div
+                  initial={shouldReduceMotion ? false : { scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 16, delay: i * 0.1 + 0.2 }}
+                  style={{ width: '36px', height: '36px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--gold-dim)', border: '1px solid var(--gold-border)', borderRadius: '2px', color: 'var(--gold)', marginTop: '2px' }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </motion.div>
+                <div>
+                  <p style={{ fontSize: '13px', fontWeight: 500, color: 'var(--cream)', marginBottom: '5px', letterSpacing: '0.01em' }}>{item.title}</p>
+                  <p style={{ fontSize: '12px', fontWeight: 300, color: 'var(--cream-muted)', lineHeight: 1.7 }}>{item.desc}</p>
                 </div>
-              </AnimatedSection>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -138,22 +253,44 @@ export default function BookPage() {
       <section aria-label="Contact information" style={{ padding: '64px 0', background: 'var(--bg-alt)', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
         <div className="container">
           <AnimatedSection style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
-            <p style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--gold)' }}>Reach Adarsh directly</p>
-            <a
-              href={WA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp +971 52 520 3533"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 400, color: 'var(--cream)', transition: 'color 200ms' }}
-              onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = 'var(--gold)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = 'var(--cream)'; }}
+            <motion.p
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4 }}
+              style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--gold)' }}
             >
-              <WhatsAppIcon size={32} />
-              +971 52 520 3533
-            </a>
-            <p style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cream-muted)', letterSpacing: '0.05em' }}>
+              Reach Adarsh directly
+            </motion.p>
+
+            {/* Magnetic phone number */}
+            <MagneticWrap strength={0.2}>
+              <motion.a
+                href={WA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp +971 52 520 3533"
+                initial={shouldReduceMotion ? false : { opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+                whileHover={{ color: 'var(--gold)' }}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 400, color: 'var(--cream)', transition: 'color 200ms', textDecoration: 'none' }}
+              >
+                <WhatsAppIcon size={32} />
+                +971 52 520 3533
+              </motion.a>
+            </MagneticWrap>
+
+            <motion.p
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.25 }}
+              style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cream-muted)', letterSpacing: '0.05em' }}
+            >
               Abu Dhabi, UAE &nbsp;·&nbsp; Dubai, UAE &nbsp;·&nbsp; Online Worldwide
-            </p>
+            </motion.p>
           </AnimatedSection>
         </div>
       </section>
