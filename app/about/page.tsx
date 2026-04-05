@@ -134,7 +134,7 @@ export default function AboutPage() {
                 <p className="s-label">Background</p>
               </AnimatedSection>
               <AnimatedSection delay={0.05} style={{ fontSize: '16px', fontWeight: 300, color: 'var(--cream-soft)', lineHeight: 1.85 }}>
-                <p>I&apos;ve played chess competitively since childhood — through school tournaments, college circuits, and open events across India and the UAE. I&apos;m FIDE-rated and active on Lichess (handle: adarshshankar).</p>
+                <p>I&apos;ve played chess competitively since childhood — through school tournaments, college circuits, and open events across India and the UAE. I&apos;m FIDE-rated and active on Lichess (handle: Samaritan963).</p>
                 <p style={{ marginTop: '1.5em' }}>I started coaching because I noticed a gap: most instructors either teach theory without feel, or game positions without structure. I do both — building pattern recognition and calculating ability together, layered on top of strong opening repertoires suited to each student&apos;s style.</p>
                 <p style={{ marginTop: '1.5em' }}>I keep my groups small on purpose — maximum 4 students. Every student gets direct, personalised attention — not a one-size-fits-all syllabus.</p>
               </AnimatedSection>
@@ -166,7 +166,7 @@ export default function AboutPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0' }}>
             {[
               { label: 'FIDE Rated', sub: 'Active competitive player' },
-              { label: 'Lichess: adarshshankar', sub: 'Open profile, verifiable games' },
+              { label: 'Lichess: Samaritan963', sub: 'Open profile, verifiable games' },
               { label: '10+ Years Experience', sub: 'Competitive & coaching' },
             ].map((cred, i) => (
               <motion.div
