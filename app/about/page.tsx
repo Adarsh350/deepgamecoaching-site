@@ -128,7 +128,7 @@ export default function AboutPage() {
       {/* BIO SECTION */}
       <section aria-labelledby="bio-heading" style={{ padding: 'var(--section) 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '80px', alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px', alignItems: 'start' }}>
             <div>
               <AnimatedSection>
                 <p className="s-label">Background</p>
@@ -146,15 +146,12 @@ export default function AboutPage() {
                 transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 style={{ position: 'relative' }}
               >
-                <div style={{ width: '100%', aspectRatio: '3/4', background: 'var(--bg-surface)', border: '1px solid var(--gold-border)', borderRadius: '1px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '14px', overflow: 'hidden' }}>
-                  <motion.span
-                    animate={shouldReduceMotion ? {} : { y: [0, -8, 0] }}
-                    transition={{ repeat: Infinity, duration: 4.5, ease: 'easeInOut' }}
-                    style={{ fontFamily: 'var(--font-display)', fontSize: '140px', color: 'var(--gold)', opacity: 0.15, lineHeight: 1 }}
-                  >
-                    ♞
-                  </motion.span>
-                  <span style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--cream-muted)' }}>Adarsh Shankar</span>
+                <div style={{ width: '100%', aspectRatio: '3/4', borderRadius: '1px', overflow: 'hidden', border: '1px solid var(--gold-border)' }}>
+                  <img
+                    src="/coach.jpg"
+                    alt="Adarsh Shankar — chess coach, Abu Dhabi"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+                  />
                 </div>
                 <div aria-hidden="true" style={{ position: 'absolute', inset: '12px -12px -12px 12px', border: '1px solid var(--gold-border)', borderRadius: '1px', opacity: 0.4, pointerEvents: 'none' }} />
               </motion.div>

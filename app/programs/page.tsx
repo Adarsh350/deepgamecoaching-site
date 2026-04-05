@@ -119,22 +119,12 @@ export default function ProgramsPage() {
               variant={prog.reverse ? 'fadeRight' : 'fadeLeft'}
               style={{ marginBottom: '32px' }}
             >
-              <article style={{
-                display: 'grid',
-                gridTemplateColumns: prog.reverse ? '200px 1fr' : '1fr 200px',
-                border: '1px solid var(--border-soft)',
-                background: 'var(--bg-card)',
-                overflow: 'hidden',
-              }}>
+              <article
+                className="prog-article"
+                style={{ gridTemplateColumns: prog.reverse ? '200px 1fr' : '1fr 200px' }}
+              >
                 {prog.reverse && (
-                  <div
-                    aria-hidden="true"
-                    style={{
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      background: 'var(--bg-surface)', borderRight: '1px solid var(--border)',
-                      position: 'relative', overflow: 'hidden', minHeight: '360px',
-                    }}
-                  >
+                  <div aria-hidden="true" className="prog-numeral" style={{ borderRight: '1px solid var(--border)' }}>
                     <motion.span
                       initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.7 }}
                       whileInView={{ opacity: 1, scale: 1 }}
@@ -152,7 +142,7 @@ export default function ProgramsPage() {
                   </div>
                 )}
 
-                <div style={{ padding: '60px 56px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div className="prog-content">
                   <motion.span
                     initial={shouldReduceMotion ? false : { opacity: 0, x: prog.reverse ? 12 : -12 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -199,14 +189,7 @@ export default function ProgramsPage() {
                 </div>
 
                 {!prog.reverse && (
-                  <div
-                    aria-hidden="true"
-                    style={{
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      background: 'var(--bg-surface)', borderLeft: '1px solid var(--border)',
-                      position: 'relative', overflow: 'hidden', minHeight: '360px',
-                    }}
-                  >
+                  <div aria-hidden="true" className="prog-numeral" style={{ borderLeft: '1px solid var(--border)' }}>
                     <motion.span
                       initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.7 }}
                       whileInView={{ opacity: 1, scale: 1 }}
