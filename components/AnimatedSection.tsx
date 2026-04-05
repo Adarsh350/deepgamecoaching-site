@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef, ReactNode } from 'react';
-import { motion, useInView, useReducedMotion } from 'framer-motion';
+import { motion, useInView, useReducedMotion, type TargetAndTransition } from 'framer-motion';
 
 type Variant = 'fadeUp' | 'fadeLeft' | 'fadeRight' | 'scale' | 'stagger';
 
@@ -15,7 +15,7 @@ interface AnimatedSectionProps {
   variant?: Variant;
 }
 
-const variantMap: Record<Variant, { hidden: object; visible: object }> = {
+const variantMap: Record<Variant, { hidden: TargetAndTransition; visible: TargetAndTransition }> = {
   fadeUp: {
     hidden: { opacity: 0, y: 28 },
     visible: { opacity: 1, y: 0 },
