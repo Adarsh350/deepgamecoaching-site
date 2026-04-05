@@ -326,10 +326,10 @@ export default function HomeClient({ ratings }: Props) {
             </motion.div>
             <blockquote>
               <p style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(22px, 3vw, 32px)', fontStyle: 'italic', fontWeight: 400, color: 'var(--cream-soft)', lineHeight: 1.55, marginBottom: '32px' }}>
-                &ldquo;Adarsh is an extremely talented chess player but I would say his bigger strength is coaching. He is the most patient coach I have worked with and my rating has improved from 700 to 1500 in 1 year under his coaching.&rdquo;
+                &ldquo;I have spent over 7 years training with Adarsh and he&apos;s been both an excellent coach and an immense support for me. When we started I knew nothing at all about chess and now I&apos;m rated over 1900 on Lichess, one of the organizers at Bangalore Chess Club and actively playing and even winning local tournaments.&rdquo;
               </p>
               <footer style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'var(--cream-muted)', marginBottom: '28px' }}>
-                — <strong style={{ color: 'var(--gold)', fontWeight: 500 }}>Amritanshi Saxena</strong> · Rating: 700 → 1500 in one year · Cornell University
+                — <strong style={{ color: 'var(--gold)', fontWeight: 500 }}>Sharanya Mathur</strong> · Rating: 0 → 1900+ on Lichess · Treasurer, Bangalore Chess Club
               </footer>
             </blockquote>
             <motion.div
