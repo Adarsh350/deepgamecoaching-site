@@ -35,33 +35,33 @@ function CountUp({ value }: { value: string }) {
 const testimonials = [
   {
     num: 'I',
-    quote: "I have spent over 7 years training with Adarsh and he's been both an excellent trainer and a fantastic human. I've improved from 1400 to 1700+ Lichess and am now competing in regional events.",
-    name: 'Sharanya',
-    role: 'Treasurer, Bangalore Chess Club\nVIT Student',
+    quote: "I have spent over 7 years training with Adarsh and he's been both an excellent coach and an immense support for me. When we started I knew nothing at all about chess and now I'm rated over 1900 on Lichess, one of the organizers at Bangalore Chess Club and actively playing and even winning local tournaments.",
+    name: 'Sharanya Mathur',
+    role: 'Treasurer, Bangalore Chess Club',
   },
   {
     num: 'II',
-    quote: "I started from scratch and now I'm playing in school tournaments. Adarsh makes it really fun and I always understand why I lose a game.",
-    name: 'Anushka',
-    role: 'School student, age 11\nAbu Dhabi, UAE',
+    quote: "I had Adarsh train me while I was competing for the Girls U14 UAE Clusters and U19 UAE Cluster and won both events. He is an excellent chess coach but even a better tournament strategist. He helped me develop my game by making my strengths stronger and it was very focused individual attention even in a group class.",
+    name: 'Anchal Gupta',
+    role: 'Former Girls Team Captain, Abu Dhabi Indian School\nUAE Cluster Champion · San Francisco Chess Club',
   },
   {
     num: 'III',
-    quote: "I had maybe 6 months of on-and-off learning before I started with Adarsh. Within a year I went from 900 to 1450 on Chess.com. His structured approach is unlike anything I've tried before.",
-    name: 'Neil',
-    role: 'Working professional\nDubai, UAE',
+    quote: "Adarsh provided chess coaching for my 6 year old son. He worked with him for a year and after his coaching he has been winning tournaments at school and is very happy and excited to play chess even more than before. He did one-on-one coaching with my son and my son has since improved leaps and bounds.",
+    name: 'Dr. Yogesh Shastri',
+    role: 'Leading Doctor, Abu Dhabi',
   },
   {
     num: 'IV',
-    quote: "Training with Adarsh helped me develop a real repertoire for the first time. I stopped playing random openings and started understanding positions. My tournament results improved significantly.",
-    name: 'Arjun',
-    role: 'College student\nCompetitive circuit',
+    quote: "Adarsh is an extremely talented chess player but I would say his bigger strength is coaching. He is the most patient coach I have worked with and my rating has improved from 700 to 1500 in 1 year under his coaching.",
+    name: 'Amritanshi Saxena',
+    role: 'Student, Cornell University',
   },
   {
     num: 'V',
-    quote: "My son started lessons at 8 years old with zero experience. Adarsh is incredibly patient and has made chess something my son genuinely looks forward to every week.",
-    name: 'Priya',
-    role: 'Parent of student\nAbu Dhabi, UAE',
+    quote: "I had Adarsh train me for both the U14 Mixed and U19 Mixed UAE Chess Tournaments and under his coaching I was able to bag prizes in all 4 years that I competed. His approach to tactics and developing your own style of play is something I haven't seen anywhere else.",
+    name: 'Jonathan Figy',
+    role: 'UAE Men\'s Cricketer',
   },
 ];
 
@@ -73,9 +73,9 @@ const stats = [
 ];
 
 const progressCards = [
-  { rating: '1400 → 1700+', student: 'Sharanya — Lichess', detail: '7 years of training, now competing at regional level in India.' },
-  { rating: '900 → 1450', student: 'Neil — Chess.com', detail: 'Under 1 year. From hobbyist to club-level competitor in Dubai.' },
-  { rating: 'Zero → Ready', student: 'Anushka — Tournament debut', detail: 'School competitions within months of picking up the pieces for the first time.' },
+  { rating: '0 → 1900+', student: 'Sharanya Mathur — Lichess', detail: '7 years of training from zero chess knowledge. Now organizer at Bangalore Chess Club, winning local tournaments.' },
+  { rating: '700 → 1500', student: 'Amritanshi Saxena — Lichess', detail: 'Under 1 year of coaching. Cornell University student.' },
+  { rating: 'U14 & U19 Champion', student: 'Anchal Gupta — UAE Clusters', detail: 'Won both Girls U14 and U19 UAE Cluster Championships under Adarsh\'s tournament preparation.' },
 ];
 
 export default function SuccessStoriesPage() {
