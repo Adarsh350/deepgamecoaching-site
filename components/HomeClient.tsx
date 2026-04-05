@@ -329,7 +329,7 @@ export default function HomeClient({ ratings }: Props) {
                 &ldquo;Adarsh is an extremely talented chess player but I would say his bigger strength is coaching. He is the most patient coach I have worked with and my rating has improved from 700 to 1500 in 1 year under his coaching.&rdquo;
               </p>
               <footer style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'var(--cream-muted)', marginBottom: '28px' }}>
-                — <strong style={{ color: 'var(--gold)', fontWeight: 500 }}>Amritanshi</strong> · Rating: 700 → 1500 in one year · Cornell University
+                — <strong style={{ color: 'var(--gold)', fontWeight: 500 }}>Amritanshi Saxena</strong> · Rating: 700 → 1500 in one year · Cornell University
               </footer>
             </blockquote>
             <motion.div
