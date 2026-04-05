@@ -148,7 +148,7 @@ export default function HomePage() {
           ♞
         </motion.div>
 
-        <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 'var(--container-max)', margin: '0 auto', padding: '80px var(--pad)' }}>
+        <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 'var(--container-max)', margin: '0 auto', padding: '48px var(--pad)' }}>
           <motion.p
             initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -239,25 +239,6 @@ export default function HomePage() {
           </motion.div>
         </div>
 
-        {/* Scroll indicator */}
-        {!shouldReduceMotion && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.4, duration: 0.6 }}
-            aria-hidden="true"
-            style={{ position: 'absolute', bottom: '32px', left: '50%', transform: 'translateX(-50%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}
-          >
-            <span style={{ fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--cream-muted)', opacity: 0.5 }}>Scroll</span>
-            <div style={{ width: '1px', height: '40px', background: 'var(--border)', overflow: 'hidden', position: 'relative' }}>
-              <motion.div
-                style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '40%', background: 'var(--gold)' }}
-                animate={{ y: ['0%', '260%'] }}
-                transition={{ repeat: Infinity, duration: 1.4, ease: 'easeInOut' }}
-              />
-            </div>
-          </motion.div>
-        )}
       </section>
 
       {/* PROOF BAR */}
@@ -363,7 +344,7 @@ export default function HomePage() {
       {/* ABOUT SNAPSHOT */}
       <section aria-labelledby="about-h2" style={{ padding: 'var(--section) 0', background: 'var(--bg)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '80px', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px', alignItems: 'center' }}>
             <AnimatedSection variant="fadeLeft">
               <p className="s-label">About the Coach</p>
               <h2 id="about-h2" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px, 4vw, 50px)', fontWeight: 400, color: 'var(--cream)', lineHeight: 1.15, letterSpacing: '-0.01em', marginBottom: '20px' }}>
@@ -402,16 +383,13 @@ export default function HomePage() {
               <motion.div
                 whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
                 transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                style={{ width: '100%', aspectRatio: '3/4', borderRadius: '4px', background: 'var(--bg-surface)', border: '1px solid var(--border-soft)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '14px', overflow: 'hidden', position: 'relative' }}
+                style={{ width: '100%', aspectRatio: '3/4', borderRadius: '4px', overflow: 'hidden', position: 'relative' }}
               >
-                <motion.span
-                  animate={shouldReduceMotion ? {} : { y: [0, -8, 0] }}
-                  transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
-                  style={{ fontFamily: 'var(--font-display)', fontSize: '140px', color: 'var(--gold)', opacity: 0.15, lineHeight: 1 }}
-                >
-                  ♞
-                </motion.span>
-                <span style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--cream-muted)' }}>Adarsh Shankar</span>
+                <img
+                  src="/coach.jpg"
+                  alt="Adarsh Shankar — Deep Game Coaching"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+                />
               </motion.div>
             </AnimatedSection>
           </div>
