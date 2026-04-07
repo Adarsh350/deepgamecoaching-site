@@ -5,6 +5,7 @@ const WA_URL = 'https://wa.me/971525203533';
 const footerLinks = [
   { href: '/', label: 'Home' },
   { href: '/programs', label: 'Programs' },
+  { href: '/pricing', label: 'Pricing' },
   { href: '/about', label: 'About' },
   { href: '/success-stories', label: 'Success Stories' },
   { href: '/book', label: 'Book a Call' },
