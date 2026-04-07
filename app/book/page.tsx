@@ -33,12 +33,25 @@ const howToJsonLd = {
   ],
 };
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://deepgamecoaching.com' },
+    { '@type': 'ListItem', position: 2, name: 'Book a Call', item: 'https://deepgamecoaching.com/book' },
+  ],
+};
+
 export default function BookPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <BookPageClient />
     </>
