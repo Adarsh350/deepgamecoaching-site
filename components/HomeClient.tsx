@@ -82,7 +82,7 @@ function CountUp({ value, suffix = '' }: { value: string; suffix?: string }) {
   const shouldReduceMotion = useReducedMotion();
   const num = parseFloat(value.replace(/[^0-9.]/g, ''));
   const motionVal = useMotionValue(0);
-  const [display, setDisplay] = useState('0');
+  const [display, setDisplay] = useState(value);
 
   useEffect(() => {
     if (!inView || shouldReduceMotion || isNaN(num)) {
@@ -392,7 +392,7 @@ export default function HomeClient({ ratings }: Props) {
               >
                 <img
                   src="/coach.jpg"
-                  alt="Adarsh Shankar — Deep Game Coaching"
+                  alt="Adarsh Shankar — chess coach in Abu Dhabi, UAE"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
                 />
               </motion.div>

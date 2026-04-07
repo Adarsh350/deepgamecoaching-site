@@ -26,6 +26,12 @@ const jsonLd = {
       ],
       serviceType: 'Chess Coaching',
       priceRange: '$$',
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5',
+        reviewCount: '5',
+        bestRating: '5',
+      },
     },
     {
       '@type': 'Person',
@@ -39,13 +45,44 @@ const jsonLd = {
         addressLocality: 'Abu Dhabi',
         addressCountry: 'AE',
       },
+      sameAs: [
+        'https://lichess.org/@/Samaritan963',
+        'https://deepgamecoaching.com',
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://deepgamecoaching.com/programs#foundations',
+      name: 'Foundations Chess Coaching',
+      description: 'Chess coaching for complete beginners — pieces, rules, tactics, and tournament preparation. Taught 1-on-1 by Adarsh Shankar.',
+      provider: { '@id': 'https://deepgamecoaching.com/#business' },
+      areaServed: ['Abu Dhabi', 'Dubai', 'Online Worldwide'],
+      serviceType: 'Chess Coaching for Beginners',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://deepgamecoaching.com/programs#development',
+      name: 'Development Chess Coaching',
+      description: 'Chess coaching for intermediate players — tactical improvement, tournament preparation, personalized training plan. 1-on-1 or small group (max 4).',
+      provider: { '@id': 'https://deepgamecoaching.com/#business' },
+      areaServed: ['Abu Dhabi', 'Dubai', 'Online Worldwide'],
+      serviceType: 'Intermediate Chess Coaching',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://deepgamecoaching.com/programs#mastery',
+      name: 'Mastery Chess Coaching',
+      description: 'Advanced chess coaching for competitive players — game analysis, opening preparation, tournament strategy from UAE championship level.',
+      provider: { '@id': 'https://deepgamecoaching.com/#business' },
+      areaServed: ['Abu Dhabi', 'Dubai', 'Online Worldwide'],
+      serviceType: 'Advanced Competitive Chess Coaching',
     },
   ],
 };
 
 export const metadata: Metadata = {
   title: 'Chess Coaching UAE | Deep Game Coaching by Adarsh Shankar',
-  description: 'Private 1-on-1 and small group chess coaching (max 4 students) by Adarsh Shankar — UAE-based, for beginners, improvers, and competitors. Online or in person.',
+  description: 'Private 1-on-1 and small group chess coaching by Adarsh Shankar — UAE-based, for beginners, improvers, and competitors. Online or in person.',
   metadataBase: new URL('https://deepgamecoaching.com'),
   keywords: ['chess coaching UAE', 'chess lessons Abu Dhabi', 'chess coach Dubai', 'FIDE rated chess coach', 'private chess tutor UAE', 'chess lessons for beginners UAE', 'competitive chess training UAE', 'online chess coaching', 'chess coach for kids UAE'],
   openGraph: {
