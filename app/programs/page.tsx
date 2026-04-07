@@ -53,12 +53,25 @@ const faqJsonLd = {
   ],
 };
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://deepgamecoaching.com' },
+    { '@type': 'ListItem', position: 2, name: 'Programs', item: 'https://deepgamecoaching.com/programs' },
+  ],
+};
+
 export default function ProgramsPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ProgramsPageClient />
     </>
