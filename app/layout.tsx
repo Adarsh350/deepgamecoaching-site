@@ -47,8 +47,13 @@ const jsonLd = {
       },
       sameAs: [
         'https://lichess.org/@/Samaritan963',
-        'https://deepgamecoaching.com',
+        'https://ratings.fide.com/profile/35048260',
       ],
+      identifier: {
+        '@type': 'PropertyValue',
+        name: 'FIDE ID',
+        value: '35048260',
+      },
     },
     {
       '@type': 'Service',
