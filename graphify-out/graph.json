@@ -1,0 +1,649 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1",
+      "id": "eslint_config_mjs",
+      "community": 16,
+      "norm_label": "eslint.config.mjs"
+    },
+    {
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "id": "next_config_ts",
+      "community": 17,
+      "norm_label": "next.config.ts"
+    },
+    {
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "id": "postcss_config_mjs",
+      "community": 18,
+      "norm_label": "postcss.config.mjs"
+    },
+    {
+      "label": "Nav.tsx",
+      "file_type": "code",
+      "source_file": "components/Nav.tsx",
+      "source_location": "L1",
+      "id": "components_nav_tsx",
+      "community": 1,
+      "norm_label": "nav.tsx"
+    },
+    {
+      "label": "onScroll()",
+      "file_type": "code",
+      "source_file": "components/Nav.tsx",
+      "source_location": "L26",
+      "id": "nav_onscroll",
+      "community": 1,
+      "norm_label": "onscroll()"
+    },
+    {
+      "label": "toggleMenu()",
+      "file_type": "code",
+      "source_file": "components/Nav.tsx",
+      "source_location": "L37",
+      "id": "nav_togglemenu",
+      "community": 1,
+      "norm_label": "togglemenu()"
+    },
+    {
+      "label": "AnimatedSection.tsx",
+      "file_type": "code",
+      "source_file": "components/AnimatedSection.tsx",
+      "source_location": "L1",
+      "id": "components_animatedsection_tsx",
+      "community": 4,
+      "norm_label": "animatedsection.tsx"
+    },
+    {
+      "label": "AnimatedSection()",
+      "file_type": "code",
+      "source_file": "components/AnimatedSection.tsx",
+      "source_location": "L41",
+      "id": "animatedsection_animatedsection",
+      "community": 4,
+      "norm_label": "animatedsection()"
+    },
+    {
+      "label": "PageTransition.tsx",
+      "file_type": "code",
+      "source_file": "components/PageTransition.tsx",
+      "source_location": "L1",
+      "id": "components_pagetransition_tsx",
+      "community": 5,
+      "norm_label": "pagetransition.tsx"
+    },
+    {
+      "label": "PageTransition()",
+      "file_type": "code",
+      "source_file": "components/PageTransition.tsx",
+      "source_location": "L6",
+      "id": "pagetransition_pagetransition",
+      "community": 5,
+      "norm_label": "pagetransition()"
+    },
+    {
+      "label": "HomeClient.tsx",
+      "file_type": "code",
+      "source_file": "components/HomeClient.tsx",
+      "source_location": "L1",
+      "id": "components_homeclient_tsx",
+      "community": 2,
+      "norm_label": "homeclient.tsx"
+    },
+    {
+      "label": "WhatsAppIcon()",
+      "file_type": "code",
+      "source_file": "components/HomeClient.tsx",
+      "source_location": "L11",
+      "id": "homeclient_whatsappicon",
+      "community": 2,
+      "norm_label": "whatsappicon()"
+    },
+    {
+      "label": "WordReveal()",
+      "file_type": "code",
+      "source_file": "components/HomeClient.tsx",
+      "source_location": "L18",
+      "id": "homeclient_wordreveal",
+      "community": 2,
+      "norm_label": "wordreveal()"
+    },
+    {
+      "label": "Footer.tsx",
+      "file_type": "code",
+      "source_file": "components/Footer.tsx",
+      "source_location": "L1",
+      "id": "components_footer_tsx",
+      "community": 6,
+      "norm_label": "footer.tsx"
+    },
+    {
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "components/Footer.tsx",
+      "source_location": "L14",
+      "id": "footer_footer",
+      "community": 6,
+      "norm_label": "footer()"
+    },
+    {
+      "label": "lichess.ts",
+      "file_type": "code",
+      "source_file": "lib/lichess.ts",
+      "source_location": "L1",
+      "id": "lib_lichess_ts",
+      "community": 0,
+      "norm_label": "lichess.ts"
+    },
+    {
+      "label": "getLichessRatings()",
+      "file_type": "code",
+      "source_file": "lib/lichess.ts",
+      "source_location": "L16",
+      "id": "lichess_getlichessratings",
+      "community": 0,
+      "norm_label": "getlichessratings()"
+    },
+    {
+      "label": "sitemap.ts",
+      "file_type": "code",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L1",
+      "id": "app_sitemap_ts",
+      "community": 7,
+      "norm_label": "sitemap.ts"
+    },
+    {
+      "label": "sitemap()",
+      "file_type": "code",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L3",
+      "id": "sitemap_sitemap",
+      "community": 7,
+      "norm_label": "sitemap()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L1",
+      "id": "app_page_tsx",
+      "community": 0,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "HomePage()",
+      "file_type": "code",
+      "source_file": "app/page.tsx",
+      "source_location": "L5",
+      "id": "page_homepage",
+      "community": 0,
+      "norm_label": "homepage()"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "app/layout.tsx",
+      "source_location": "L1",
+      "id": "app_layout_tsx",
+      "community": 19,
+      "norm_label": "layout.tsx"
+    },
+    {
+      "label": "robots.ts",
+      "file_type": "code",
+      "source_file": "app/robots.ts",
+      "source_location": "L1",
+      "id": "app_robots_ts",
+      "community": 8,
+      "norm_label": "robots.ts"
+    },
+    {
+      "label": "robots()",
+      "file_type": "code",
+      "source_file": "app/robots.ts",
+      "source_location": "L3",
+      "id": "robots_robots",
+      "community": 8,
+      "norm_label": "robots()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/pricing/page.tsx",
+      "source_location": "L1",
+      "id": "app_pricing_page_tsx",
+      "community": 9,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "PricingPage()",
+      "file_type": "code",
+      "source_file": "app/pricing/page.tsx",
+      "source_location": "L94",
+      "id": "page_pricingpage",
+      "community": 9,
+      "norm_label": "pricingpage()"
+    },
+    {
+      "label": "PricingPageClient.tsx",
+      "file_type": "code",
+      "source_file": "app/pricing/PricingPageClient.tsx",
+      "source_location": "L1",
+      "id": "app_pricing_pricingpageclient_tsx",
+      "community": 20,
+      "norm_label": "pricingpageclient.tsx"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/programs/page.tsx",
+      "source_location": "L1",
+      "id": "app_programs_page_tsx",
+      "community": 10,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "ProgramsPage()",
+      "file_type": "code",
+      "source_file": "app/programs/page.tsx",
+      "source_location": "L65",
+      "id": "page_programspage",
+      "community": 10,
+      "norm_label": "programspage()"
+    },
+    {
+      "label": "ProgramsPageClient.tsx",
+      "file_type": "code",
+      "source_file": "app/programs/ProgramsPageClient.tsx",
+      "source_location": "L1",
+      "id": "app_programs_programspageclient_tsx",
+      "community": 21,
+      "norm_label": "programspageclient.tsx"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/book/page.tsx",
+      "source_location": "L1",
+      "id": "app_book_page_tsx",
+      "community": 11,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "BookPage()",
+      "file_type": "code",
+      "source_file": "app/book/page.tsx",
+      "source_location": "L45",
+      "id": "page_bookpage",
+      "community": 11,
+      "norm_label": "bookpage()"
+    },
+    {
+      "label": "BookPageClient.tsx",
+      "file_type": "code",
+      "source_file": "app/book/BookPageClient.tsx",
+      "source_location": "L1",
+      "id": "app_book_bookpageclient_tsx",
+      "community": 3,
+      "norm_label": "bookpageclient.tsx"
+    },
+    {
+      "label": "WhatsAppIcon()",
+      "file_type": "code",
+      "source_file": "app/book/BookPageClient.tsx",
+      "source_location": "L9",
+      "id": "bookpageclient_whatsappicon",
+      "community": 3,
+      "norm_label": "whatsappicon()"
+    },
+    {
+      "label": "MagneticWrap()",
+      "file_type": "code",
+      "source_file": "app/book/BookPageClient.tsx",
+      "source_location": "L16",
+      "id": "bookpageclient_magneticwrap",
+      "community": 3,
+      "norm_label": "magneticwrap()"
+    },
+    {
+      "label": "AboutPageClient.tsx",
+      "file_type": "code",
+      "source_file": "app/about/AboutPageClient.tsx",
+      "source_location": "L1",
+      "id": "app_about_aboutpageclient_tsx",
+      "community": 12,
+      "norm_label": "aboutpageclient.tsx"
+    },
+    {
+      "label": "CharReveal()",
+      "file_type": "code",
+      "source_file": "app/about/AboutPageClient.tsx",
+      "source_location": "L11",
+      "id": "aboutpageclient_charreveal",
+      "community": 12,
+      "norm_label": "charreveal()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/about/page.tsx",
+      "source_location": "L1",
+      "id": "app_about_page_tsx",
+      "community": 13,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "AboutPage()",
+      "file_type": "code",
+      "source_file": "app/about/page.tsx",
+      "source_location": "L18",
+      "id": "page_aboutpage",
+      "community": 13,
+      "norm_label": "aboutpage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "app/success-stories/page.tsx",
+      "source_location": "L1",
+      "id": "app_success_stories_page_tsx",
+      "community": 14,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "SuccessStoriesPage()",
+      "file_type": "code",
+      "source_file": "app/success-stories/page.tsx",
+      "source_location": "L81",
+      "id": "page_successstoriespage",
+      "community": 14,
+      "norm_label": "successstoriespage()"
+    },
+    {
+      "label": "SuccessStoriesPageClient.tsx",
+      "file_type": "code",
+      "source_file": "app/success-stories/SuccessStoriesPageClient.tsx",
+      "source_location": "L1",
+      "id": "app_success_stories_successstoriespageclient_tsx",
+      "community": 15,
+      "norm_label": "successstoriespageclient.tsx"
+    },
+    {
+      "label": "CountUp()",
+      "file_type": "code",
+      "source_file": "app/success-stories/SuccessStoriesPageClient.tsx",
+      "source_location": "L11",
+      "id": "successstoriespageclient_countup",
+      "community": 15,
+      "norm_label": "countup()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Nav.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_src": "components_nav_tsx",
+      "_tgt": "nav_onscroll",
+      "source": "components_nav_tsx",
+      "target": "nav_onscroll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Nav.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_src": "components_nav_tsx",
+      "_tgt": "nav_togglemenu",
+      "source": "components_nav_tsx",
+      "target": "nav_togglemenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/AnimatedSection.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_src": "components_animatedsection_tsx",
+      "_tgt": "animatedsection_animatedsection",
+      "source": "components_animatedsection_tsx",
+      "target": "animatedsection_animatedsection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/PageTransition.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "components_pagetransition_tsx",
+      "_tgt": "pagetransition_pagetransition",
+      "source": "components_pagetransition_tsx",
+      "target": "pagetransition_pagetransition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/HomeClient.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "components_homeclient_tsx",
+      "_tgt": "homeclient_whatsappicon",
+      "source": "components_homeclient_tsx",
+      "target": "homeclient_whatsappicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/HomeClient.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "components_homeclient_tsx",
+      "_tgt": "homeclient_wordreveal",
+      "source": "components_homeclient_tsx",
+      "target": "homeclient_wordreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Footer.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "components_footer_tsx",
+      "_tgt": "footer_footer",
+      "source": "components_footer_tsx",
+      "target": "footer_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/lichess.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "lib_lichess_ts",
+      "_tgt": "lichess_getlichessratings",
+      "source": "lib_lichess_ts",
+      "target": "lichess_getlichessratings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "page_homepage",
+      "_tgt": "lichess_getlichessratings",
+      "source": "lichess_getlichessratings",
+      "target": "page_homepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "app_sitemap_ts",
+      "_tgt": "sitemap_sitemap",
+      "source": "app_sitemap_ts",
+      "target": "sitemap_sitemap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_src": "app_page_tsx",
+      "_tgt": "page_homepage",
+      "source": "app_page_tsx",
+      "target": "page_homepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/robots.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "app_robots_ts",
+      "_tgt": "robots_robots",
+      "source": "app_robots_ts",
+      "target": "robots_robots",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pricing/page.tsx",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_src": "app_pricing_page_tsx",
+      "_tgt": "page_pricingpage",
+      "source": "app_pricing_page_tsx",
+      "target": "page_pricingpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/programs/page.tsx",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_src": "app_programs_page_tsx",
+      "_tgt": "page_programspage",
+      "source": "app_programs_page_tsx",
+      "target": "page_programspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/book/page.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_src": "app_book_page_tsx",
+      "_tgt": "page_bookpage",
+      "source": "app_book_page_tsx",
+      "target": "page_bookpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/book/BookPageClient.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "app_book_bookpageclient_tsx",
+      "_tgt": "bookpageclient_whatsappicon",
+      "source": "app_book_bookpageclient_tsx",
+      "target": "bookpageclient_whatsappicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/book/BookPageClient.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "app_book_bookpageclient_tsx",
+      "_tgt": "bookpageclient_magneticwrap",
+      "source": "app_book_bookpageclient_tsx",
+      "target": "bookpageclient_magneticwrap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/about/AboutPageClient.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "app_about_aboutpageclient_tsx",
+      "_tgt": "aboutpageclient_charreveal",
+      "source": "app_about_aboutpageclient_tsx",
+      "target": "aboutpageclient_charreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/about/page.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "app_about_page_tsx",
+      "_tgt": "page_aboutpage",
+      "source": "app_about_page_tsx",
+      "target": "page_aboutpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/success-stories/page.tsx",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_src": "app_success_stories_page_tsx",
+      "_tgt": "page_successstoriespage",
+      "source": "app_success_stories_page_tsx",
+      "target": "page_successstoriespage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/success-stories/SuccessStoriesPageClient.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "app_success_stories_successstoriespageclient_tsx",
+      "_tgt": "successstoriespageclient_countup",
+      "source": "app_success_stories_successstoriespageclient_tsx",
+      "target": "successstoriespageclient_countup",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
